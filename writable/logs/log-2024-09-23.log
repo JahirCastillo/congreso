@@ -1,0 +1,1237 @@
+WARNING - 2024-09-23 16:50:36 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(35): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-23 16:50:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':' at line 1 in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM s...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM s...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM s...')
+#3 C:\xampp\htdocs\Nube\scopici4\app\Models\AccesoModel.php(9): CodeIgniter\Database\BaseConnection->query('SELECT * FROM s...', Array)
+#4 C:\xampp\htdocs\Nube\scopici4\app\Controllers\Login.php(40): App\Models\AccesoModel->buscaUsuario('admin')
+#5 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+#6 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Nube\scopici4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-09-23 16:50:38 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':' at line 1
+[Method: POST, Route: login/validaUsuario]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\AccesoModel.php(9): CodeIgniter\Database\BaseConnection->query('SELECT * FROM scp_usuarios WHERE usu_login = ?:', [...])
+ 2 APPPATH\Controllers\Login.php(40): App\Models\AccesoModel->buscaUsuario('admin')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-23 16:50:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM scp_usuarios WHERE usu_login = \'admin\':')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM scp_usuarios WHERE usu_login = \'admin\':')
+ 3 APPPATH\Models\AccesoModel.php(9): CodeIgniter\Database\BaseConnection->query('SELECT * FROM scp_usuarios WHERE usu_login = ?:', [...])
+ 4 APPPATH\Controllers\Login.php(40): App\Models\AccesoModel->buscaUsuario('admin')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-23 16:50:38 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM scp_usuarios WHERE usu_login = \'admin\':', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM scp_usuarios WHERE usu_login = \'admin\':')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM scp_usuarios WHERE usu_login = \'admin\':')
+ 4 APPPATH\Models\AccesoModel.php(9): CodeIgniter\Database\BaseConnection->query('SELECT * FROM scp_usuarios WHERE usu_login = ?:', [...])
+ 5 APPPATH\Controllers\Login.php(40): App\Models\AccesoModel->buscaUsuario('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-09-23 16:51:46 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(35): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-09-23 16:51:54 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(35): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-09-23 16:53:52 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(35): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-09-23 16:53:59 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(35): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-09-23 16:54:03 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(35): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-09-23 16:54:24 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(35): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-09-23 16:54:32 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(35): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-09-23 17:01:48 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(35): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-09-23 17:01:56 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(35): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-23 18:44:07 --> InvalidArgumentException: Invalid session handler "Config\DatabaseHandler" provided.
+[Method: GET, Route: /]
+in SYSTEMPATH\Config\Services.php on line 690.
+ 1 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 2 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 3 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 4 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 6 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+ 7 SYSTEMPATH\Common.php(971): service('session')
+ 8 APPPATH\Controllers\Login.php(15): session()
+ 9 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+10 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-23 18:45:41 --> InvalidArgumentException: Invalid session handler "database" provided.
+[Method: GET, Route: /]
+in SYSTEMPATH\Config\Services.php on line 690.
+ 1 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 2 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 3 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 4 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 6 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+ 7 SYSTEMPATH\Common.php(971): service('session')
+ 8 APPPATH\Controllers\Login.php(15): session()
+ 9 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+10 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-23 18:45:42 --> InvalidArgumentException: Invalid session handler "database" provided.
+[Method: GET, Route: /]
+in SYSTEMPATH\Config\Services.php on line 690.
+ 1 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 2 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 3 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 4 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 6 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+ 7 SYSTEMPATH\Common.php(971): service('session')
+ 8 APPPATH\Controllers\Login.php(15): session()
+ 9 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+10 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-23 18:52:22 --> mysqli_sql_exception: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `data`\nF...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`\nF...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`\nF...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`\nF...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('589ip7b30d6obp1...')
+#6 C:\xampp\htdocs\Nube\scopici4\system\Session\Session.php(920): session_start()
+#7 C:\xampp\htdocs\Nube\scopici4\system\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+#8 C:\xampp\htdocs\Nube\scopici4\system\Config\Services.php(710): CodeIgniter\Session\Session->start()
+#9 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#10 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 C:\xampp\htdocs\Nube\scopici4\system\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#12 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+#13 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#14 C:\xampp\htdocs\Nube\scopici4\system\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+#15 C:\xampp\htdocs\Nube\scopici4\system\Common.php(971): service('session')
+#16 C:\xampp\htdocs\Nube\scopici4\app\Controllers\Login.php(15): session()
+#17 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(903): App\Controllers\Login->__construct()
+#18 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#19 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#20 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#21 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#22 C:\xampp\htdocs\Nube\scopici4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#23 {main}
+CRITICAL - 2024-09-23 18:52:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 2 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('589ip7b30d6obp1damathebtm3mf8tml')
+ 4 SYSTEMPATH\Session\Session.php(920): session_start()
+ 5 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 8 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 9 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+10 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+12 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+13 SYSTEMPATH\Common.php(971): service('session')
+14 APPPATH\Controllers\Login.php(15): session()
+15 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+16 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+17 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+18 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+19 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+20 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-23 18:52:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:589ip7b30d6obp1damathebtm3mf8tml\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:589ip7b30d6obp1damathebtm3mf8tml\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 4 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('589ip7b30d6obp1damathebtm3mf8tml')
+ 6 SYSTEMPATH\Session\Session.php(920): session_start()
+ 7 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 8 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 9 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+10 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+11 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+12 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+13 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+14 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+15 SYSTEMPATH\Common.php(971): service('session')
+16 APPPATH\Controllers\Login.php(15): session()
+17 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+18 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+19 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-23 18:52:22 --> [Caused by] mysqli_sql_exception: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:589ip7b30d6obp1damathebtm3mf8tml\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:589ip7b30d6obp1damathebtm3mf8tml\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:589ip7b30d6obp1damathebtm3mf8tml\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('589ip7b30d6obp1damathebtm3mf8tml')
+ 7 SYSTEMPATH\Session\Session.php(920): session_start()
+ 8 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 9 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+10 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+11 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+12 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+13 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+14 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+15 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+16 SYSTEMPATH\Common.php(971): service('session')
+17 APPPATH\Controllers\Login.php(15): session()
+18 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+19 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+21 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+23 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-23 18:54:47 --> mysqli_sql_exception: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `data`\nF...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`\nF...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`\nF...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`\nF...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('589ip7b30d6obp1...')
+#6 C:\xampp\htdocs\Nube\scopici4\system\Session\Session.php(920): session_start()
+#7 C:\xampp\htdocs\Nube\scopici4\system\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+#8 C:\xampp\htdocs\Nube\scopici4\system\Config\Services.php(710): CodeIgniter\Session\Session->start()
+#9 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#10 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 C:\xampp\htdocs\Nube\scopici4\system\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#12 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+#13 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#14 C:\xampp\htdocs\Nube\scopici4\system\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+#15 C:\xampp\htdocs\Nube\scopici4\system\Common.php(971): service('session')
+#16 C:\xampp\htdocs\Nube\scopici4\app\Controllers\Login.php(15): session()
+#17 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(903): App\Controllers\Login->__construct()
+#18 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#19 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#20 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#21 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#22 C:\xampp\htdocs\Nube\scopici4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#23 {main}
+CRITICAL - 2024-09-23 18:54:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 2 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('589ip7b30d6obp1damathebtm3mf8tml')
+ 4 SYSTEMPATH\Session\Session.php(920): session_start()
+ 5 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 8 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 9 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+10 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+12 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+13 SYSTEMPATH\Common.php(971): service('session')
+14 APPPATH\Controllers\Login.php(15): session()
+15 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+16 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+17 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+18 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+19 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+20 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-23 18:54:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:589ip7b30d6obp1damathebtm3mf8tml\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:589ip7b30d6obp1damathebtm3mf8tml\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 4 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('589ip7b30d6obp1damathebtm3mf8tml')
+ 6 SYSTEMPATH\Session\Session.php(920): session_start()
+ 7 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 8 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 9 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+10 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+11 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+12 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+13 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+14 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+15 SYSTEMPATH\Common.php(971): service('session')
+16 APPPATH\Controllers\Login.php(15): session()
+17 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+18 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+19 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-23 18:54:47 --> [Caused by] mysqli_sql_exception: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:589ip7b30d6obp1damathebtm3mf8tml\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:589ip7b30d6obp1damathebtm3mf8tml\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:589ip7b30d6obp1damathebtm3mf8tml\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('589ip7b30d6obp1damathebtm3mf8tml')
+ 7 SYSTEMPATH\Session\Session.php(920): session_start()
+ 8 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 9 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+10 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+11 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+12 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+13 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+14 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+15 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+16 SYSTEMPATH\Common.php(971): service('session')
+17 APPPATH\Controllers\Login.php(15): session()
+18 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+19 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+21 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+23 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-23 18:56:21 --> mysqli_sql_exception: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `data`\nF...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`\nF...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`\nF...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`\nF...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('589ip7b30d6obp1...')
+#6 C:\xampp\htdocs\Nube\scopici4\system\Session\Session.php(920): session_start()
+#7 C:\xampp\htdocs\Nube\scopici4\system\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+#8 C:\xampp\htdocs\Nube\scopici4\system\Config\Services.php(710): CodeIgniter\Session\Session->start()
+#9 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#10 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 C:\xampp\htdocs\Nube\scopici4\system\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#12 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+#13 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#14 C:\xampp\htdocs\Nube\scopici4\system\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+#15 C:\xampp\htdocs\Nube\scopici4\system\Common.php(971): service('session')
+#16 C:\xampp\htdocs\Nube\scopici4\app\Controllers\Login.php(15): session()
+#17 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(903): App\Controllers\Login->__construct()
+#18 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#19 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#20 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#21 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#22 C:\xampp\htdocs\Nube\scopici4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#23 {main}
+CRITICAL - 2024-09-23 18:56:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 2 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('589ip7b30d6obp1damathebtm3mf8tml')
+ 4 SYSTEMPATH\Session\Session.php(920): session_start()
+ 5 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 8 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 9 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+10 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+12 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+13 SYSTEMPATH\Common.php(971): service('session')
+14 APPPATH\Controllers\Login.php(15): session()
+15 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+16 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+17 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+18 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+19 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+20 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-23 18:56:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:589ip7b30d6obp1damathebtm3mf8tml\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:589ip7b30d6obp1damathebtm3mf8tml\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 4 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('589ip7b30d6obp1damathebtm3mf8tml')
+ 6 SYSTEMPATH\Session\Session.php(920): session_start()
+ 7 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 8 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 9 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+10 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+11 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+12 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+13 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+14 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+15 SYSTEMPATH\Common.php(971): service('session')
+16 APPPATH\Controllers\Login.php(15): session()
+17 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+18 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+19 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-23 18:56:21 --> [Caused by] mysqli_sql_exception: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:589ip7b30d6obp1damathebtm3mf8tml\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:589ip7b30d6obp1damathebtm3mf8tml\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:589ip7b30d6obp1damathebtm3mf8tml\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('589ip7b30d6obp1damathebtm3mf8tml')
+ 7 SYSTEMPATH\Session\Session.php(920): session_start()
+ 8 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 9 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+10 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+11 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+12 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+13 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+14 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+15 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+16 SYSTEMPATH\Common.php(971): service('session')
+17 APPPATH\Controllers\Login.php(15): session()
+18 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+19 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+21 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+23 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-23 18:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-09-23 18:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-09-23 18:57:36 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(39): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-23 18:57:38 --> mysqli_sql_exception: Duplicate entry 'ci_session:589ip7b30d6obp1damathebtm3mf8' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('589ip7b30d6obp1...', '')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-09-23 18:59:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-09-23 18:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-09-23 18:59:56 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(39): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-23 18:59:58 --> mysqli_sql_exception: Duplicate entry 'ci_session:589ip7b30d6obp1damathebtm3mf8' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('589ip7b30d6obp1...', '')
+#6 [internal function]: session_write_close()
+#7 {main}
+WARNING - 2024-09-23 19:06:07 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(37): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-09-23 19:06:09 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(75): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-23 19:06:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2024-09-23 19:06:14 --> ErrorException: Undefined property: App\Controllers\Login::$session
+[Method: POST, Route: login/ponensesion]
+in APPPATH\Controllers\Login.php on line 117.
+ 1 APPPATH\Controllers\Login.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$session', 'C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Controllers\\Login.php', 117)
+ 2 APPPATH\Controllers\Login.php(83): App\Controllers\Login->registraLog('local')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-09-23 19:06:56 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(75): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-23 19:07:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2024-09-23 19:07:02 --> ArgumentCountError: Too few arguments to function App\Controllers\Login::registraLog(), 1 passed in C:\xampp\htdocs\Nube\scopici4\app\Controllers\Login.php on line 83 and exactly 2 expected
+[Method: POST, Route: login/ponensesion]
+in APPPATH\Controllers\Login.php on line 114.
+ 1 APPPATH\Controllers\Login.php(83): App\Controllers\Login->registraLog('local')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-23 19:07:02 --> mysqli_sql_exception: Duplicate entry 'ci_session:589ip7b30d6obp1damathebtm3mf8' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('589ip7b30d6obp1...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+WARNING - 2024-09-23 19:07:24 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(75): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-23 19:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2024-09-23 19:07:29 --> ErrorException: Undefined property: App\Controllers\Login::$input
+[Method: POST, Route: login/ponensesion]
+in APPPATH\Controllers\Login.php on line 121.
+ 1 APPPATH\Controllers\Login.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$input', 'C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Controllers\\Login.php', 121)
+ 2 APPPATH\Controllers\Login.php(83): App\Controllers\Login->registraLog('local', Object(CodeIgniter\Session\Session))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-23 19:07:29 --> mysqli_sql_exception: Duplicate entry 'ci_session:589ip7b30d6obp1damathebtm3mf8' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('589ip7b30d6obp1...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+WARNING - 2024-09-23 19:08:10 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(75): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-23 19:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2024-09-23 19:08:15 --> Error: Call to a member function getPlatform() on null
+[Method: POST, Route: login/ponensesion]
+in APPPATH\Controllers\Login.php on line 124.
+ 1 APPPATH\Controllers\Login.php(83): App\Controllers\Login->registraLog('local', Object(CodeIgniter\Session\Session))
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-23 19:08:15 --> mysqli_sql_exception: Duplicate entry 'ci_session:589ip7b30d6obp1damathebtm3mf8' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('589ip7b30d6obp1...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+WARNING - 2024-09-23 19:09:14 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(75): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-23 19:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2024-09-23 19:09:19 --> Error: Call to a member function getPlatform() on null
+[Method: POST, Route: login/ponensesion]
+in APPPATH\Controllers\Login.php on line 124.
+ 1 APPPATH\Controllers\Login.php(83): App\Controllers\Login->registraLog('local', Object(CodeIgniter\Session\Session))
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-23 19:09:19 --> mysqli_sql_exception: Duplicate entry 'ci_session:589ip7b30d6obp1damathebtm3mf8' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('589ip7b30d6obp1...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+CRITICAL - 2024-09-23 19:12:11 --> Error: Call to a member function getUserAgent() on null
+[Method: POST, Route: login/ponensesion]
+in APPPATH\Controllers\Login.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-23 19:12:12 --> Error: Call to a member function getUserAgent() on null
+[Method: POST, Route: login/ponensesion]
+in APPPATH\Controllers\Login.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-23 19:14:44 --> Error: Call to a member function getUserAgent() on null
+[Method: POST, Route: login/ponensesion]
+in APPPATH\Controllers\Login.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-23 19:14:46 --> Error: Call to a member function getUserAgent() on null
+[Method: POST, Route: login/ponensesion]
+in APPPATH\Controllers\Login.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-09-23 19:14:56 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(76): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-23 19:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2024-09-23 19:15:01 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: POST, Route: login/ponensesion]
+in SYSTEMPATH\Database\BaseConnection.php on line 927.
+ 1 SYSTEMPATH\Model.php(716): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(922): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Login.php(129): CodeIgniter\Model->__call('guardaLog', [...])
+ 4 APPPATH\Controllers\Login.php(84): App\Controllers\Login->registraLog('local', Object(CodeIgniter\Session\Session))
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-23 19:15:01 --> mysqli_sql_exception: Duplicate entry 'ci_session:589ip7b30d6obp1damathebtm3mf8' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('589ip7b30d6obp1...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+CRITICAL - 2024-09-23 19:15:53 --> Error: Call to a member function getUserAgent() on null
+[Method: POST, Route: login/ponensesion]
+in APPPATH\Controllers\Login.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-23 19:15:56 --> Error: Call to a member function getUserAgent() on null
+[Method: POST, Route: login/ponensesion]
+in APPPATH\Controllers\Login.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-09-23 19:16:14 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(76): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-23 19:16:36 --> WpOrg\Requests\Exception: cURL error 56: Recv failure: Connection was reset
+[Method: POST, Route: login/ponensesion]
+in VENDORPATH\rmccue\requests\src\Transport\Curl.php on line 490.
+ 1 VENDORPATH\rmccue\requests\src\Transport\Curl.php(219): WpOrg\Requests\Transport\Curl->process_response('', [...])
+ 2 VENDORPATH\rmccue\requests\src\Requests.php(469): WpOrg\Requests\Transport\Curl->request('http://148.226.12.106/ad/api/front/GetUserDataAD', [...], '{"UserId":"admin"}', [...])
+ 3 VENDORPATH\rmccue\requests\src\Requests.php(342): WpOrg\Requests\Requests::request('http://148.226.12.106/ad/api/front/GetUserDataAD', [...], '{"UserId":"admin"}', 'POST', [...])
+ 4 APPPATH\Controllers\Login.php(76): WpOrg\Requests\Requests::post('http://148.226.12.106/ad/api/front/GetUserDataAD', [...], '{"UserId":"admin"}', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-09-23 19:16:59 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(76): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-23 19:17:18 --> WpOrg\Requests\Exception: cURL error 56: Recv failure: Connection was reset
+[Method: POST, Route: login/ponensesion]
+in VENDORPATH\rmccue\requests\src\Transport\Curl.php on line 490.
+ 1 VENDORPATH\rmccue\requests\src\Transport\Curl.php(219): WpOrg\Requests\Transport\Curl->process_response('', [...])
+ 2 VENDORPATH\rmccue\requests\src\Requests.php(469): WpOrg\Requests\Transport\Curl->request('http://148.226.12.106/ad/api/front/GetUserDataAD', [...], '{"UserId":"admin"}', [...])
+ 3 VENDORPATH\rmccue\requests\src\Requests.php(342): WpOrg\Requests\Requests::request('http://148.226.12.106/ad/api/front/GetUserDataAD', [...], '{"UserId":"admin"}', 'POST', [...])
+ 4 APPPATH\Controllers\Login.php(76): WpOrg\Requests\Requests::post('http://148.226.12.106/ad/api/front/GetUserDataAD', [...], '{"UserId":"admin"}', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-09-23 19:17:31 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(76): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-23 19:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2024-09-23 19:17:36 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: POST, Route: login/ponensesion]
+in SYSTEMPATH\Database\BaseConnection.php on line 927.
+ 1 SYSTEMPATH\Model.php(716): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(922): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Login.php(129): CodeIgniter\Model->__call('guardaLog', [...])
+ 4 APPPATH\Controllers\Login.php(84): App\Controllers\Login->registraLog('local', Object(CodeIgniter\Session\Session))
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-23 19:17:36 --> mysqli_sql_exception: Duplicate entry 'ci_session:589ip7b30d6obp1damathebtm3mf8' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('589ip7b30d6obp1...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+WARNING - 2024-09-23 19:28:56 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(76): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-23 19:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2024-09-23 19:29:01 --> ErrorException: Undefined variable $db
+[Method: POST, Route: login/ponensesion]
+in APPPATH\Models\AccesoModel.php on line 14.
+ 1 APPPATH\Models\AccesoModel.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\AccesoModel.php', 14)
+ 2 APPPATH\Controllers\Login.php(129): App\Models\AccesoModel->guardaLog([...])
+ 3 APPPATH\Controllers\Login.php(84): App\Controllers\Login->registraLog('local', Object(CodeIgniter\Session\Session))
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-23 19:29:01 --> mysqli_sql_exception: Duplicate entry 'ci_session:589ip7b30d6obp1damathebtm3mf8' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('589ip7b30d6obp1...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+WARNING - 2024-09-23 19:29:44 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(76): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-23 19:29:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2024-09-23 19:29:49 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "inicio" cannot be found.
+[Method: POST, Route: login/ponensesion]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 64.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('inicio')
+ 2 SYSTEMPATH\Common.php(853): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Login.php(85): redirect('inicio')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-23 19:29:49 --> mysqli_sql_exception: Duplicate entry 'ci_session:589ip7b30d6obp1damathebtm3mf8' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('589ip7b30d6obp1...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+WARNING - 2024-09-23 19:31:42 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(76): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-23 19:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2024-09-23 19:31:48 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "inicio" cannot be found.
+[Method: POST, Route: login/ponensesion]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 64.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('inicio')
+ 2 SYSTEMPATH\Common.php(853): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Login.php(85): redirect('inicio')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-23 19:31:48 --> mysqli_sql_exception: Duplicate entry 'ci_session:589ip7b30d6obp1damathebtm3mf8' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('589ip7b30d6obp1...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+WARNING - 2024-09-23 19:32:55 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(76): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-23 19:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2024-09-23 19:33:00 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "inicio" cannot be found.
+[Method: POST, Route: login/ponensesion]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 64.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('inicio')
+ 2 SYSTEMPATH\Common.php(853): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Login.php(85): redirect('inicio')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-23 19:33:00 --> mysqli_sql_exception: Duplicate entry 'ci_session:589ip7b30d6obp1damathebtm3mf8' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('589ip7b30d6obp1...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+WARNING - 2024-09-23 19:33:40 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(76): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-23 19:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2024-09-23 19:33:46 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "inicio" cannot be found.
+[Method: POST, Route: login/ponensesion]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 64.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('inicio')
+ 2 SYSTEMPATH\Common.php(853): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Login.php(85): redirect('inicio')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-23 19:33:46 --> mysqli_sql_exception: Duplicate entry 'ci_session:589ip7b30d6obp1damathebtm3mf8' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('589ip7b30d6obp1...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+WARNING - 2024-09-23 19:34:28 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(76): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-23 19:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2024-09-23 19:34:33 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "inicio" cannot be found.
+[Method: POST, Route: login/ponensesion]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 64.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('inicio')
+ 2 SYSTEMPATH\Common.php(853): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Login.php(85): redirect('inicio')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-23 19:34:33 --> mysqli_sql_exception: Duplicate entry 'ci_session:589ip7b30d6obp1damathebtm3mf8' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('589ip7b30d6obp1...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+WARNING - 2024-09-23 19:35:21 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(38): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-09-23 19:35:23 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(76): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-23 19:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2024-09-23 19:35:28 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "inicio" cannot be found.
+[Method: POST, Route: login/ponensesion]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 64.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('inicio')
+ 2 SYSTEMPATH\Common.php(853): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Login.php(85): redirect('inicio')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-09-23 19:36:30 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(76): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-23 19:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-09-23 19:36:35 --> mysqli_sql_exception: Duplicate entry 'ci_session:589ip7b30d6obp1damathebtm3mf8' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('589ip7b30d6obp1...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+WARNING - 2024-09-23 19:36:58 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(38): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-09-23 19:37:00 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(76): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-23 19:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-09-23 19:37:06 --> mysqli_sql_exception: Duplicate entry 'ci_session:589ip7b30d6obp1damathebtm3mf8' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('589ip7b30d6obp1...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+CRITICAL - 2024-09-23 19:38:00 --> TypeError: App\Controllers\Inicio::index(): Return value must be of type string, none returned
+[Method: GET, Route: inicio]
+in APPPATH\Controllers\Inicio.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Inicio->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

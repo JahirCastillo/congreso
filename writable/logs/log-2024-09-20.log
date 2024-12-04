@@ -1,0 +1,21 @@
+CRITICAL - 2024-09-20 20:23:10 --> ErrorException: Undefined property: App\Controllers\Login::$load
+[Method: POST, Route: login/validaUsuario]
+in APPPATH\Controllers\Login.php on line 14.
+ 1 APPPATH\Controllers\Login.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$load', 'C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Controllers\\Login.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-09-20 20:23:29 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(27): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

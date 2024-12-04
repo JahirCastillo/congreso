@@ -1,0 +1,137 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-primary {
+    background-color: #18529D !important;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+.sidebar-brand .brand-link .brand-image {
+    max-height: 50px;
+}
+
+table.dataTable thead th {
+    background-color: #4CAF50 !important;
+    /* Color de fondo */
+    color: white !important;
+    /* Color del texto */
+}
+
+nav.app-header.navbar {
+    background-color: #18529D !important;
+}
+
+a.nombreUsuario {
+    color: #fff;
+}
+
+i.bi.bi-arrows-fullscreen,
+i.bi.bi-fullscreen-exit {
+    color: #fff;
+}
+
+button.btn.btn-primary {
+    background-color: #18529D;
+}
+
+button#bd-theme {
+    color: #fff;
+}
+
+.nav-link.active {
+    border-color: #4CAF50;
+    /* Color de borde verde */
+    border-bottom: 3px solid #4CAF50;
+    /* Grosor del borde */
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border-top: 1px solid #18529D;
+    /* Grosor del borde */
+}
+
+.estatus_desc {
+    width: 25px !important;
+    height: 25px !important;
+    border-radius: 50%;
+    float: left;
+    font-size: 12px !important;
+    padding-top: 2px !important;
+    text-align: center;
+    color: #fff !important;
+}
+
+.estatus_desc_conteo {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    float: left;
+    font-size: 10px !important;
+    padding-top: 2px !important;
+    text-align: center;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+.estatus_1A {
+    background-color: #214F20 !important;
+    border: 2px solid #3FB53B;
+}
+
+.estatus_NA {
+    background-color: #800000 !important;
+    border: 2px solid #F25B5B;
+}
+
+.estatus_1C {
+    background-color: #2B429B !important;
+    border: 2px solid #3FB53B;
+}
+
+.estatus_2A {
+    background-color: #646CB6 !important;
+    border: 2px solid #3FB53B;
+}
+
+.estatus_CA {
+    background-color: #54364F !important;
+    border: 2px solid #F25B5B;
+}
+
+.estatus_N2A {
+    background-color: #A97728 !important;
+    border: 2px solid #F25B5B;
+}
+
+.estatus_NI {
+    background-color: #79343C !important;
+    border: 2px solid #F25B5B;
+}
+
+.estatus_NIC {
+    background-color: #73158C !important;
+    border: 2px solid #F25B5B;
+}
+
+.btn-success {
+    background-color: #4CAF50 !important;
+    border-color: #4CAF50 !important;
+}

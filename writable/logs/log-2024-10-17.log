@@ -1,0 +1,1781 @@
+WARNING - 2024-10-17 16:55:50 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(38): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 16:55:53 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(76): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-17 16:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 19:26:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 19:26:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 19:26:32 --> mysqli_sql_exception: Duplicate entry 'ci_session:nbmv50ts2ma997qb9nbgihe5mt2vj' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('nbmv50ts2ma997q...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 19:27:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 19:27:07 --> mysqli_sql_exception: Duplicate entry 'ci_session:nbmv50ts2ma997qb9nbgihe5mt2vj' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('nbmv50ts2ma997q...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 19:29:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 19:29:09 --> mysqli_sql_exception: Duplicate entry 'ci_session:nbmv50ts2ma997qb9nbgihe5mt2vj' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('nbmv50ts2ma997q...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 19:43:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 19:43:37 --> mysqli_sql_exception: Duplicate entry 'ci_session:nbmv50ts2ma997qb9nbgihe5mt2vj' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('nbmv50ts2ma997q...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 19:43:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 19:43:56 --> mysqli_sql_exception: Duplicate entry 'ci_session:nbmv50ts2ma997qb9nbgihe5mt2vj' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('nbmv50ts2ma997q...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 19:47:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 19:47:13 --> mysqli_sql_exception: Duplicate entry 'ci_session:nbmv50ts2ma997qb9nbgihe5mt2vj' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('nbmv50ts2ma997q...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 19:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 19:53:48 --> mysqli_sql_exception: Duplicate entry 'ci_session:nbmv50ts2ma997qb9nbgihe5mt2vj' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('nbmv50ts2ma997q...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 19:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 19:53:50 --> mysqli_sql_exception: Duplicate entry 'ci_session:nbmv50ts2ma997qb9nbgihe5mt2vj' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('nbmv50ts2ma997q...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 19:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 19:55:07 --> mysqli_sql_exception: Duplicate entry 'ci_session:nbmv50ts2ma997qb9nbgihe5mt2vj' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('nbmv50ts2ma997q...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 19:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 19:55:18 --> mysqli_sql_exception: Duplicate entry 'ci_session:nbmv50ts2ma997qb9nbgihe5mt2vj' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('nbmv50ts2ma997q...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+WARNING - 2024-10-17 19:57:22 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(38): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 19:57:24 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(76): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-17 19:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 19:57:29 --> mysqli_sql_exception: Duplicate entry 'ci_session:nbmv50ts2ma997qb9nbgihe5mt2vj' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('nbmv50ts2ma997q...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+WARNING - 2024-10-17 19:57:44 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(76): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-17 19:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 19:57:49 --> mysqli_sql_exception: Duplicate entry 'ci_session:nbmv50ts2ma997qb9nbgihe5mt2vj' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('nbmv50ts2ma997q...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:01:46 --> mysqli_sql_exception: Duplicate entry 'ci_session:nbmv50ts2ma997qb9nbgihe5mt2vj' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('nbmv50ts2ma997q...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-17 20:02:48 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(76): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-17 20:02:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 20:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:03:19 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:03:45 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:03:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:03:48 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:04:45 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2024-10-17 20:10:26 --> TypeError: App\Controllers\Inicio::index(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+[Method: GET, Route: inicio]
+in APPPATH\Controllers\Inicio.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Inicio->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-10-17 20:10:27 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:12:49 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2024-10-17 20:13:06 --> ArgumentCountError: Too few arguments to function CodeIgniter\HTTP\RedirectResponse::to(), 0 passed in C:\xampp\htdocs\Nube\scopici4\app\Controllers\Inicio.php on line 12 and at least 1 expected
+[Method: GET, Route: inicio]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 36.
+ 1 APPPATH\Controllers\Inicio.php(12): CodeIgniter\HTTP\RedirectResponse->to()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Inicio->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-10-17 20:13:06 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2024-10-17 20:13:08 --> ArgumentCountError: Too few arguments to function CodeIgniter\HTTP\RedirectResponse::to(), 0 passed in C:\xampp\htdocs\Nube\scopici4\app\Controllers\Inicio.php on line 12 and at least 1 expected
+[Method: GET, Route: inicio]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 36.
+ 1 APPPATH\Controllers\Inicio.php(12): CodeIgniter\HTTP\RedirectResponse->to()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Inicio->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-10-17 20:13:08 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:13:18 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+WARNING - 2024-10-17 20:14:09 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(38): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 20:14:11 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(76): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-17 20:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:14:17 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:14:17 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+WARNING - 2024-10-17 20:17:07 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(38): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 20:17:07 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(38): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 20:17:09 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(76): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 20:17:09 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(76): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-17 20:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:17:15 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:17:15 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:17:15 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-17 20:18:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$session is deprecated in APPPATH\Controllers\Login.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-10-17 20:18:38 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-17 20:18:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$session is deprecated in APPPATH\Controllers\Login.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 20:18:43 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(38): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-10-17 20:18:45 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '')
+#6 [internal function]: session_write_close()
+#7 {main}
+WARNING - 2024-10-17 20:21:08 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(37): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 20:21:10 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(75): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-17 20:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 20:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:21:38 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:22:23 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:22:24 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:22:25 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:22:25 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:22:25 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:22:26 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:23:26 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:23:40 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:24:17 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:29:45 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:29:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:29:46 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:31:14 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:31:29 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:33:38 --> mysqli_sql_exception: Duplicate entry 'ci_session:kqsgf643o6m10tctpsf3hq2mpqlrq' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('kqsgf643o6m10tc...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-17 20:33:53 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(37): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 20:33:55 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(75): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-17 20:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 20:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:35:02 --> mysqli_sql_exception: Duplicate entry 'ci_session:jsaibuo0754mv14cjpa0592tva261' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('jsaibuo0754mv14...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:35:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:35:17 --> mysqli_sql_exception: Duplicate entry 'ci_session:jsaibuo0754mv14cjpa0592tva261' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('jsaibuo0754mv14...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+ERROR - 2024-10-17 20:38:57 --> mysqli_sql_exception: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `data`\nF...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`\nF...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`\nF...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`\nF...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14...')
+#6 C:\xampp\htdocs\Nube\scopici4\system\Session\Session.php(920): session_start()
+#7 C:\xampp\htdocs\Nube\scopici4\system\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+#8 C:\xampp\htdocs\Nube\scopici4\system\Config\Services.php(710): CodeIgniter\Session\Session->start()
+#9 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#10 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 C:\xampp\htdocs\Nube\scopici4\system\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#12 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+#13 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#14 C:\xampp\htdocs\Nube\scopici4\system\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+#15 C:\xampp\htdocs\Nube\scopici4\system\Common.php(971): service('session')
+#16 C:\xampp\htdocs\Nube\scopici4\app\Controllers\Login.php(141): session()
+#17 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(933): App\Controllers\Login->destruirSesion()
+#18 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#19 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#20 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#21 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#22 C:\xampp\htdocs\Nube\scopici4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#23 {main}
+CRITICAL - 2024-10-17 20:38:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+[Method: GET, Route: login/destruirSesion]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 2 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14cjpa0592tva26178c')
+ 4 SYSTEMPATH\Session\Session.php(920): session_start()
+ 5 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 8 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 9 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+10 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+12 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+13 SYSTEMPATH\Common.php(971): service('session')
+14 APPPATH\Controllers\Login.php(141): session()
+15 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->destruirSesion()
+16 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+17 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+18 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+19 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+20 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-17 20:38:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 4 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14cjpa0592tva26178c')
+ 6 SYSTEMPATH\Session\Session.php(920): session_start()
+ 7 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 8 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 9 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+10 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+11 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+12 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+13 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+14 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+15 SYSTEMPATH\Common.php(971): service('session')
+16 APPPATH\Controllers\Login.php(141): session()
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->destruirSesion()
+18 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+19 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-17 20:38:57 --> [Caused by] mysqli_sql_exception: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14cjpa0592tva26178c')
+ 7 SYSTEMPATH\Session\Session.php(920): session_start()
+ 8 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 9 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+10 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+11 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+12 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+13 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+14 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+15 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+16 SYSTEMPATH\Common.php(971): service('session')
+17 APPPATH\Controllers\Login.php(141): session()
+18 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->destruirSesion()
+19 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+21 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+23 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 20:39:17 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(37): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 20:39:19 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(75): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-10-17 20:39:24 --> mysqli_sql_exception: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `data`\nF...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`\nF...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`\nF...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`\nF...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14...')
+#6 C:\xampp\htdocs\Nube\scopici4\system\Session\Session.php(920): session_start()
+#7 C:\xampp\htdocs\Nube\scopici4\system\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+#8 C:\xampp\htdocs\Nube\scopici4\system\Config\Services.php(710): CodeIgniter\Session\Session->start()
+#9 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#10 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 C:\xampp\htdocs\Nube\scopici4\system\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#12 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+#13 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#14 C:\xampp\htdocs\Nube\scopici4\system\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+#15 C:\xampp\htdocs\Nube\scopici4\system\Common.php(971): service('session')
+#16 C:\xampp\htdocs\Nube\scopici4\app\Controllers\Login.php(78): session()
+#17 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+#18 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#19 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#20 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#21 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#22 C:\xampp\htdocs\Nube\scopici4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#23 {main}
+CRITICAL - 2024-10-17 20:39:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+[Method: POST, Route: login/ponensesion]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 2 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14cjpa0592tva26178c')
+ 4 SYSTEMPATH\Session\Session.php(920): session_start()
+ 5 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 8 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 9 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+10 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+12 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+13 SYSTEMPATH\Common.php(971): service('session')
+14 APPPATH\Controllers\Login.php(78): session()
+15 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+16 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+17 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+18 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+19 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+20 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-17 20:39:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 4 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14cjpa0592tva26178c')
+ 6 SYSTEMPATH\Session\Session.php(920): session_start()
+ 7 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 8 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 9 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+10 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+11 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+12 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+13 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+14 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+15 SYSTEMPATH\Common.php(971): service('session')
+16 APPPATH\Controllers\Login.php(78): session()
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+18 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+19 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-17 20:39:24 --> [Caused by] mysqli_sql_exception: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14cjpa0592tva26178c')
+ 7 SYSTEMPATH\Session\Session.php(920): session_start()
+ 8 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 9 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+10 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+11 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+12 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+13 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+14 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+15 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+16 SYSTEMPATH\Common.php(971): service('session')
+17 APPPATH\Controllers\Login.php(78): session()
+18 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+19 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+21 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+23 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 20:41:01 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(37): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 20:41:03 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(75): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-10-17 20:41:08 --> mysqli_sql_exception: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `data`\nF...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`\nF...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`\nF...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`\nF...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14...')
+#6 C:\xampp\htdocs\Nube\scopici4\system\Session\Session.php(920): session_start()
+#7 C:\xampp\htdocs\Nube\scopici4\system\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+#8 C:\xampp\htdocs\Nube\scopici4\system\Config\Services.php(710): CodeIgniter\Session\Session->start()
+#9 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#10 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 C:\xampp\htdocs\Nube\scopici4\system\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#12 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+#13 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#14 C:\xampp\htdocs\Nube\scopici4\system\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+#15 C:\xampp\htdocs\Nube\scopici4\system\Common.php(971): service('session')
+#16 C:\xampp\htdocs\Nube\scopici4\app\Controllers\Login.php(78): session()
+#17 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+#18 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#19 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#20 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#21 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#22 C:\xampp\htdocs\Nube\scopici4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#23 {main}
+CRITICAL - 2024-10-17 20:41:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+[Method: POST, Route: login/ponensesion]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 2 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14cjpa0592tva26178c')
+ 4 SYSTEMPATH\Session\Session.php(920): session_start()
+ 5 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 8 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 9 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+10 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+12 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+13 SYSTEMPATH\Common.php(971): service('session')
+14 APPPATH\Controllers\Login.php(78): session()
+15 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+16 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+17 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+18 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+19 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+20 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-17 20:41:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 4 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14cjpa0592tva26178c')
+ 6 SYSTEMPATH\Session\Session.php(920): session_start()
+ 7 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 8 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 9 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+10 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+11 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+12 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+13 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+14 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+15 SYSTEMPATH\Common.php(971): service('session')
+16 APPPATH\Controllers\Login.php(78): session()
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+18 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+19 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-17 20:41:08 --> [Caused by] mysqli_sql_exception: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14cjpa0592tva26178c')
+ 7 SYSTEMPATH\Session\Session.php(920): session_start()
+ 8 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 9 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+10 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+11 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+12 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+13 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+14 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+15 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+16 SYSTEMPATH\Common.php(971): service('session')
+17 APPPATH\Controllers\Login.php(78): session()
+18 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+19 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+21 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+23 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 20:44:49 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(75): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-10-17 20:44:54 --> mysqli_sql_exception: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `data`\nF...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`\nF...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`\nF...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`\nF...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14...')
+#6 C:\xampp\htdocs\Nube\scopici4\system\Session\Session.php(920): session_start()
+#7 C:\xampp\htdocs\Nube\scopici4\system\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+#8 C:\xampp\htdocs\Nube\scopici4\system\Config\Services.php(710): CodeIgniter\Session\Session->start()
+#9 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#10 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 C:\xampp\htdocs\Nube\scopici4\system\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#12 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+#13 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#14 C:\xampp\htdocs\Nube\scopici4\system\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+#15 C:\xampp\htdocs\Nube\scopici4\system\Common.php(971): service('session')
+#16 C:\xampp\htdocs\Nube\scopici4\app\Controllers\Login.php(78): session()
+#17 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+#18 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#19 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#20 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#21 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#22 C:\xampp\htdocs\Nube\scopici4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#23 {main}
+CRITICAL - 2024-10-17 20:44:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+[Method: POST, Route: login/ponensesion]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 2 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14cjpa0592tva26178c')
+ 4 SYSTEMPATH\Session\Session.php(920): session_start()
+ 5 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 8 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 9 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+10 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+12 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+13 SYSTEMPATH\Common.php(971): service('session')
+14 APPPATH\Controllers\Login.php(78): session()
+15 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+16 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+17 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+18 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+19 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+20 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-17 20:44:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 4 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14cjpa0592tva26178c')
+ 6 SYSTEMPATH\Session\Session.php(920): session_start()
+ 7 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 8 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 9 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+10 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+11 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+12 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+13 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+14 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+15 SYSTEMPATH\Common.php(971): service('session')
+16 APPPATH\Controllers\Login.php(78): session()
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+18 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+19 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-17 20:44:54 --> [Caused by] mysqli_sql_exception: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14cjpa0592tva26178c')
+ 7 SYSTEMPATH\Session\Session.php(920): session_start()
+ 8 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 9 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+10 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+11 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+12 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+13 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+14 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+15 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+16 SYSTEMPATH\Common.php(971): service('session')
+17 APPPATH\Controllers\Login.php(78): session()
+18 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+19 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+21 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+23 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 20:46:05 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(37): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 20:46:07 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(75): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-10-17 20:46:11 --> mysqli_sql_exception: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `data`\nF...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`\nF...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`\nF...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`\nF...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14...')
+#6 C:\xampp\htdocs\Nube\scopici4\system\Session\Session.php(920): session_start()
+#7 C:\xampp\htdocs\Nube\scopici4\system\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+#8 C:\xampp\htdocs\Nube\scopici4\system\Config\Services.php(710): CodeIgniter\Session\Session->start()
+#9 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#10 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 C:\xampp\htdocs\Nube\scopici4\system\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#12 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+#13 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#14 C:\xampp\htdocs\Nube\scopici4\system\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+#15 C:\xampp\htdocs\Nube\scopici4\system\Common.php(971): service('session')
+#16 C:\xampp\htdocs\Nube\scopici4\app\Controllers\Login.php(78): session()
+#17 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+#18 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#19 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#20 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#21 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#22 C:\xampp\htdocs\Nube\scopici4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#23 {main}
+CRITICAL - 2024-10-17 20:46:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+[Method: POST, Route: login/ponensesion]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 2 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14cjpa0592tva26178c')
+ 4 SYSTEMPATH\Session\Session.php(920): session_start()
+ 5 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 8 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 9 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+10 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+12 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+13 SYSTEMPATH\Common.php(971): service('session')
+14 APPPATH\Controllers\Login.php(78): session()
+15 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+16 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+17 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+18 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+19 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+20 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-17 20:46:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 4 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14cjpa0592tva26178c')
+ 6 SYSTEMPATH\Session\Session.php(920): session_start()
+ 7 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 8 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 9 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+10 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+11 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+12 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+13 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+14 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+15 SYSTEMPATH\Common.php(971): service('session')
+16 APPPATH\Controllers\Login.php(78): session()
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+18 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+19 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-17 20:46:11 --> [Caused by] mysqli_sql_exception: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14cjpa0592tva26178c')
+ 7 SYSTEMPATH\Session\Session.php(920): session_start()
+ 8 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 9 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+10 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+11 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+12 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+13 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+14 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+15 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+16 SYSTEMPATH\Common.php(971): service('session')
+17 APPPATH\Controllers\Login.php(78): session()
+18 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+19 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+21 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+23 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 20:47:42 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(37): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 20:47:44 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(75): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-10-17 20:47:48 --> mysqli_sql_exception: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `data`\nF...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`\nF...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`\nF...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`\nF...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14...')
+#6 C:\xampp\htdocs\Nube\scopici4\system\Session\Session.php(920): session_start()
+#7 C:\xampp\htdocs\Nube\scopici4\system\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+#8 C:\xampp\htdocs\Nube\scopici4\system\Config\Services.php(710): CodeIgniter\Session\Session->start()
+#9 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#10 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 C:\xampp\htdocs\Nube\scopici4\system\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#12 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+#13 C:\xampp\htdocs\Nube\scopici4\system\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#14 C:\xampp\htdocs\Nube\scopici4\system\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+#15 C:\xampp\htdocs\Nube\scopici4\system\Common.php(971): service('session')
+#16 C:\xampp\htdocs\Nube\scopici4\app\Controllers\Login.php(78): session()
+#17 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+#18 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#19 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#20 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#21 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#22 C:\xampp\htdocs\Nube\scopici4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#23 {main}
+CRITICAL - 2024-10-17 20:47:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+[Method: POST, Route: login/ponensesion]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 2 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14cjpa0592tva26178c')
+ 4 SYSTEMPATH\Session\Session.php(920): session_start()
+ 5 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 8 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 9 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+10 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+12 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+13 SYSTEMPATH\Common.php(971): service('session')
+14 APPPATH\Controllers\Login.php(78): session()
+15 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+16 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+17 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+18 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+19 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+20 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-17 20:47:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 4 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14cjpa0592tva26178c')
+ 6 SYSTEMPATH\Session\Session.php(920): session_start()
+ 7 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 8 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 9 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+10 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+11 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+12 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+13 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+14 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+15 SYSTEMPATH\Common.php(971): service('session')
+16 APPPATH\Controllers\Login.php(78): session()
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+18 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+19 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-17 20:47:48 --> [Caused by] mysqli_sql_exception: Table 'scopi2024.c:\xampp\htdocs\nube\scopici4\writable\session' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = \'ci_session:jsaibuo0754mv14cjpa0592tva26178c\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `C:\\xampp\\htdocs\\Nube\\scopici4\\writable\\session`
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('jsaibuo0754mv14cjpa0592tva26178c')
+ 7 SYSTEMPATH\Session\Session.php(920): session_start()
+ 8 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 9 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+10 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+11 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+12 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+13 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+14 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+15 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+16 SYSTEMPATH\Common.php(971): service('session')
+17 APPPATH\Controllers\Login.php(78): session()
+18 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+19 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+21 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+23 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 20:48:16 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(37): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 20:48:18 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(75): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-17 20:48:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 20:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:48:49 --> mysqli_sql_exception: Duplicate entry 'ci_session:jsaibuo0754mv14cjpa0592tva261' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('jsaibuo0754mv14...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:50:57 --> mysqli_sql_exception: Duplicate entry 'ci_session:jsaibuo0754mv14cjpa0592tva261' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('jsaibuo0754mv14...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:50:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:50:59 --> mysqli_sql_exception: Duplicate entry 'ci_session:jsaibuo0754mv14cjpa0592tva261' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('jsaibuo0754mv14...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:51:00 --> mysqli_sql_exception: Duplicate entry 'ci_session:jsaibuo0754mv14cjpa0592tva261' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('jsaibuo0754mv14...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:51:01 --> mysqli_sql_exception: Duplicate entry 'ci_session:jsaibuo0754mv14cjpa0592tva261' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('jsaibuo0754mv14...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:51:01 --> mysqli_sql_exception: Duplicate entry 'ci_session:jsaibuo0754mv14cjpa0592tva261' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('jsaibuo0754mv14...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:51:01 --> mysqli_sql_exception: Duplicate entry 'ci_session:jsaibuo0754mv14cjpa0592tva261' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('jsaibuo0754mv14...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:51:02 --> mysqli_sql_exception: Duplicate entry 'ci_session:jsaibuo0754mv14cjpa0592tva261' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('jsaibuo0754mv14...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-17 20:51:35 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(37): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 20:51:37 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(75): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-17 20:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 20:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:51:46 --> mysqli_sql_exception: Duplicate entry 'ci_session:8okurlja3fc6f8jp4a1v1ccuq5ek9' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('8okurlja3fc6f8j...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 20:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-17 20:51:50 --> mysqli_sql_exception: Duplicate entry 'ci_session:8okurlja3fc6f8jp4a1v1ccuq5ek9' for key 'PRIMARY' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\system\Session\Handlers\DatabaseHandler.php(199): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('8okurlja3fc6f8j...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+INFO - 2024-10-17 21:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-17 22:13:05 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(37): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 22:13:07 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(75): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-17 22:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:13:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:13:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-17 22:13:57 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(37): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 22:13:59 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(75): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-17 22:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:14:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:15:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-17 22:19:08 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(37): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-17 22:19:09 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(75): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-17 22:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:28:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:28:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:29:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:39:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-17 22:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.

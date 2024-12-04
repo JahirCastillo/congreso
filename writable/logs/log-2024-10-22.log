@@ -1,0 +1,925 @@
+WARNING - 2024-10-22 16:49:48 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(37): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 16:49:51 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(75): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 16:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 16:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 16:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 17:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 17:03:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-22 17:03:33 --> mysqli_sql_exception: Table 'scopi2024.solicitudes' doesn't exist in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\app\Models\SolicitudesModel.php(23): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\Nube\scopici4\app\Controllers\Solicitudes.php(37): App\Models\SolicitudesModel->getSolicitudes('10', '0', '', 'sol_id', 'asc')
+#6 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+#7 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+#8 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Nube\scopici4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-10-22 17:03:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'scopi2024.solicitudes' doesn't exist
+[Method: POST, Route: solicitudes/getSolicitudes]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `solicitudes`', [], false)
+ 2 APPPATH\Models\SolicitudesModel.php(23): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 APPPATH\Controllers\Solicitudes.php(37): App\Models\SolicitudesModel->getSolicitudes('10', '0', '', 'sol_id', 'asc')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-22 17:03:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'scopi2024.solicitudes' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `solicitudes`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `solicitudes`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `solicitudes`', [], false)
+ 4 APPPATH\Models\SolicitudesModel.php(23): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 APPPATH\Controllers\Solicitudes.php(37): App\Models\SolicitudesModel->getSolicitudes('10', '0', '', 'sol_id', 'asc')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-22 17:03:33 --> [Caused by] mysqli_sql_exception: Table 'scopi2024.solicitudes' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `solicitudes`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `solicitudes`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `solicitudes`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `solicitudes`', [], false)
+ 5 APPPATH\Models\SolicitudesModel.php(23): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 APPPATH\Controllers\Solicitudes.php(37): App\Models\SolicitudesModel->getSolicitudes('10', '0', '', 'sol_id', 'asc')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-22 17:03:51 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: solicitudes/getSolicitudes]
+in APPPATH\Controllers\Solicitudes.php on line 28.
+ 1 APPPATH\Controllers\Solicitudes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Controllers\\Solicitudes.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 17:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 17:08:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 17:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 17:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 17:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 17:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 17:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 17:17:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 17:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 17:19:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 17:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 17:21:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 17:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-22 17:43:36 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(50): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->validaUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 17:43:38 --> [DEPRECATED] The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in VENDORPATH\rmccue\requests\library\Requests.php on line 21.
+ 1 VENDORPATH\rmccue\requests\library\Requests.php(21): trigger_error('The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\\Requests\\...` class names at your earliest convenience.', 16384)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\rmccue\\requests\\library\\Requests.php')
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Nube\\scopici4\\vendor\\composer/../rmccue/requests/library/Requests.php')
+ 4 APPPATH\Controllers\Login.php(89): Composer\Autoload\ClassLoader->loadClass('Requests')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->ponensesion()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 17:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 17:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 17:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 18:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 18:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 18:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 18:57:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 18:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 18:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 19:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-10-22 19:09:18 --> mysqli_sql_exception: Unknown column 'asp_id' in 'field list' in C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nube\scopici4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `asp_id`...', 0)
+#1 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `asp_id`...')
+#2 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `asp_id`...')
+#3 C:\xampp\htdocs\Nube\scopici4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `asp_id`...', Array, false)
+#4 C:\xampp\htdocs\Nube\scopici4\app\Models\SolicitudesModel.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Nube\scopici4\app\Controllers\Solicitudes.php(40): App\Models\SolicitudesModel->getSolicitudes('10', '0', '', 'asp_id', 'asc', Array, 'scp_solicitudes')
+#6 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+#7 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+#8 C:\xampp\htdocs\Nube\scopici4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Nube\scopici4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Nube\scopici4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-10-22 19:09:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'asp_id' in 'field list'
+[Method: POST, Route: solicitudes/getSolicitudes]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `asp_id`, `exa_foliouvclave`, `nombre`, `asp_curp`, `sol_matricula`, `car_nombrearea`, `car_nombreregion`, `car_nombrecarrera`, `car_modalidad`, `pcne`, `ppma`, `pcl`, `prin`, `ping`
+FROM `scp_solicitudes`
+ORDER BY `asp_id` ASC
+ LIMIT 10', [], false)
+ 2 APPPATH\Models\SolicitudesModel.php(38): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Solicitudes.php(40): App\Models\SolicitudesModel->getSolicitudes('10', '0', '', 'asp_id', 'asc', [...], 'scp_solicitudes')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-22 19:09:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'asp_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `asp_id`, `exa_foliouvclave`, `nombre`, `asp_curp`, `sol_matricula`, `car_nombrearea`, `car_nombreregion`, `car_nombrecarrera`, `car_modalidad`, `pcne`, `ppma`, `pcl`, `prin`, `ping`
+FROM `scp_solicitudes`
+ORDER BY `asp_id` ASC
+ LIMIT 10')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `asp_id`, `exa_foliouvclave`, `nombre`, `asp_curp`, `sol_matricula`, `car_nombrearea`, `car_nombreregion`, `car_nombrecarrera`, `car_modalidad`, `pcne`, `ppma`, `pcl`, `prin`, `ping`
+FROM `scp_solicitudes`
+ORDER BY `asp_id` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `asp_id`, `exa_foliouvclave`, `nombre`, `asp_curp`, `sol_matricula`, `car_nombrearea`, `car_nombreregion`, `car_nombrecarrera`, `car_modalidad`, `pcne`, `ppma`, `pcl`, `prin`, `ping`
+FROM `scp_solicitudes`
+ORDER BY `asp_id` ASC
+ LIMIT 10', [], false)
+ 4 APPPATH\Models\SolicitudesModel.php(38): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Solicitudes.php(40): App\Models\SolicitudesModel->getSolicitudes('10', '0', '', 'asp_id', 'asc', [...], 'scp_solicitudes')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-22 19:09:18 --> [Caused by] mysqli_sql_exception: Unknown column 'asp_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `asp_id`, `exa_foliouvclave`, `nombre`, `asp_curp`, `sol_matricula`, `car_nombrearea`, `car_nombreregion`, `car_nombrecarrera`, `car_modalidad`, `pcne`, `ppma`, `pcl`, `prin`, `ping`
+FROM `scp_solicitudes`
+ORDER BY `asp_id` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `asp_id`, `exa_foliouvclave`, `nombre`, `asp_curp`, `sol_matricula`, `car_nombrearea`, `car_nombreregion`, `car_nombrecarrera`, `car_modalidad`, `pcne`, `ppma`, `pcl`, `prin`, `ping`
+FROM `scp_solicitudes`
+ORDER BY `asp_id` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `asp_id`, `exa_foliouvclave`, `nombre`, `asp_curp`, `sol_matricula`, `car_nombrearea`, `car_nombreregion`, `car_nombrecarrera`, `car_modalidad`, `pcne`, `ppma`, `pcl`, `prin`, `ping`
+FROM `scp_solicitudes`
+ORDER BY `asp_id` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `asp_id`, `exa_foliouvclave`, `nombre`, `asp_curp`, `sol_matricula`, `car_nombrearea`, `car_nombreregion`, `car_nombrecarrera`, `car_modalidad`, `pcne`, `ppma`, `pcl`, `prin`, `ping`
+FROM `scp_solicitudes`
+ORDER BY `asp_id` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\Models\SolicitudesModel.php(38): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Solicitudes.php(40): App\Models\SolicitudesModel->getSolicitudes('10', '0', '', 'asp_id', 'asc', [...], 'scp_solicitudes')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 19:09:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 19:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 19:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 19:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 19:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 19:36:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 19:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 19:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 19:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 19:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 19:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 19:53:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 19:54:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 19:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 19:55:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 19:56:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 19:56:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 20:00:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 20:00:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 20:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 20:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 20:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 20:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 20:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 20:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 20:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 20:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 20:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-10-22 20:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-22 20:39:44 --> [DEPRECATED] Optional parameter $search declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 20:39:44 --> [DEPRECATED] Optional parameter $orderColumn declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 20:39:44 --> [DEPRECATED] Optional parameter $orderDir declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 20:39:44 --> [DEPRECATED] Optional parameter $columns declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 20:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-22 20:44:19 --> [DEPRECATED] Optional parameter $search declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 20:44:19 --> [DEPRECATED] Optional parameter $orderColumn declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 20:44:19 --> [DEPRECATED] Optional parameter $orderDir declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 20:44:19 --> [DEPRECATED] Optional parameter $columns declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 20:44:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-22 20:44:38 --> [DEPRECATED] Optional parameter $search declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 20:44:38 --> [DEPRECATED] Optional parameter $orderColumn declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 20:44:38 --> [DEPRECATED] Optional parameter $orderDir declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 20:44:38 --> [DEPRECATED] Optional parameter $columns declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 20:53:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-22 20:53:41 --> [DEPRECATED] Optional parameter $search declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 20:53:41 --> [DEPRECATED] Optional parameter $orderColumn declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 20:53:41 --> [DEPRECATED] Optional parameter $orderDir declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 20:53:41 --> [DEPRECATED] Optional parameter $columns declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 20:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-22 20:54:26 --> [DEPRECATED] Optional parameter $search declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 20:54:26 --> [DEPRECATED] Optional parameter $orderColumn declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 20:54:26 --> [DEPRECATED] Optional parameter $orderDir declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 20:54:26 --> [DEPRECATED] Optional parameter $columns declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 20:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-22 20:55:40 --> [DEPRECATED] Optional parameter $search declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 20:55:40 --> [DEPRECATED] Optional parameter $orderColumn declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 20:55:40 --> [DEPRECATED] Optional parameter $orderDir declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 20:55:40 --> [DEPRECATED] Optional parameter $columns declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 22:20:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-22 22:20:44 --> [DEPRECATED] Optional parameter $search declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:20:44 --> [DEPRECATED] Optional parameter $orderColumn declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:20:44 --> [DEPRECATED] Optional parameter $orderDir declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:20:44 --> [DEPRECATED] Optional parameter $columns declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 22:21:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-22 22:21:39 --> [DEPRECATED] Optional parameter $search declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:21:39 --> [DEPRECATED] Optional parameter $orderColumn declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:21:39 --> [DEPRECATED] Optional parameter $orderDir declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:21:39 --> [DEPRECATED] Optional parameter $columns declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 22:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-22 22:34:49 --> [DEPRECATED] Optional parameter $search declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:34:49 --> [DEPRECATED] Optional parameter $orderColumn declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:34:49 --> [DEPRECATED] Optional parameter $orderDir declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:34:49 --> [DEPRECATED] Optional parameter $columns declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 22:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-22 22:35:07 --> [DEPRECATED] Optional parameter $search declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:35:07 --> [DEPRECATED] Optional parameter $orderColumn declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:35:07 --> [DEPRECATED] Optional parameter $orderDir declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:35:07 --> [DEPRECATED] Optional parameter $columns declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 22:36:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-22 22:36:11 --> [DEPRECATED] Optional parameter $search declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:36:11 --> [DEPRECATED] Optional parameter $orderColumn declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:36:11 --> [DEPRECATED] Optional parameter $orderDir declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:36:11 --> [DEPRECATED] Optional parameter $columns declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 22:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-22 22:36:46 --> [DEPRECATED] Optional parameter $search declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:36:46 --> [DEPRECATED] Optional parameter $orderColumn declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:36:46 --> [DEPRECATED] Optional parameter $orderDir declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:36:46 --> [DEPRECATED] Optional parameter $columns declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 22:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-22 22:51:21 --> [DEPRECATED] Optional parameter $search declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:51:21 --> [DEPRECATED] Optional parameter $orderColumn declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:51:21 --> [DEPRECATED] Optional parameter $orderDir declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:51:21 --> [DEPRECATED] Optional parameter $columns declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 22:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-22 22:51:48 --> [DEPRECATED] Optional parameter $search declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:51:48 --> [DEPRECATED] Optional parameter $orderColumn declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:51:48 --> [DEPRECATED] Optional parameter $orderDir declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:51:48 --> [DEPRECATED] Optional parameter $columns declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 22:51:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-10-22 22:51:59 --> [DEPRECATED] Optional parameter $search declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:51:59 --> [DEPRECATED] Optional parameter $orderColumn declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:51:59 --> [DEPRECATED] Optional parameter $orderDir declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-10-22 22:51:59 --> [DEPRECATED] Optional parameter $columns declared before required parameter $table is implicitly treated as a required parameter in APPPATH\Models\SolicitudesModel.php on line 0.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\Nube\\scopici4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Nube\\scopici4\\app\\Models\\SolicitudesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SolicitudesModel')
+ 4 APPPATH\Controllers\Solicitudes.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SolicitudesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Solicitudes->getSolicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Solicitudes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
