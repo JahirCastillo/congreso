@@ -22,7 +22,9 @@
     <script src="<?= base_url('js/jquery-3.7.1.min.js'); ?>"></script>
     <script
         src="https://cdn.datatables.net/v/bs5/dt-2.1.8/b-3.1.2/b-html5-3.1.2/b-print-3.1.2/r-3.0.3/datatables.min.js"></script>
-    <script src="<?= base_url('./js/utilerias.js'); ?>"></script>
+    <link href="<?= base_url('/js/summernote/summernote-lite.min.css'); ?>" rel="stylesheet">
+    <script src="<?= base_url('/js/summernote/summernote-lite.min.js'); ?>"></script>
+    <script src="<?= base_url('/js/utilerias.js'); ?>"></script>
     <script src="<?= base_url('js/popper.min.js'); ?>"></script>
     <script src="<?= base_url('js/bootstrap.min.js'); ?>"></script>
     <script src="<?= base_url('js/adminlte.js') ?>"></script>

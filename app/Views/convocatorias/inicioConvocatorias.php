@@ -24,7 +24,6 @@
                                     <th>Nombre</th>
                                     <th>Fecha inicio</th>
                                     <th>Fecha recepción doc.</th>
-                                    <th>Descripción</th>
                                     <th>Ubicación</th>
                                     <th>Estatus</th>
                                     <th>Editar</th>
@@ -51,7 +50,7 @@
                 <h5 class="modal-title" id="tituloModalDetalleConvocatoria"></h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body" id="contenidoDetalleUsuario">
+            <div class="modal-body" id="contenidoDetalleConvocatoria">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-success" id="btnGuardarCambios">
@@ -81,20 +80,19 @@
                 { "data": "nombre" },
                 { "data": "fecha_inicio" },
                 { "data": "fecha_limite_documentos" },
-                { "data": "descripcion" },
                 { "data": "ubicacion" },
                 { "data": "estatus" },
                 {
                     "data": null,
                     "render": function (data, type, row) {
-                        return '<button class="btn btn-warning editar-usuario" onclick="editarConvocatoria(' + row.id + ')"><i class="bi bi-pencil"></i></button>';
+                        return '<button class="btn btn-warning editar-usuario" onclick="editarConvocatoria(' + row.id_convocatoria + ')"><i class="bi bi-pencil"></i></button>';
                     },
                     "orderable": false
                 },
                 {
                     "data": null,
                     "render": function (data, type, row) {
-                        return '<button class="btn btn-danger eliminar-usuario" onclick="eliminarConvocatoria(' + row.id + ')"><i class="bi bi-trash"></i></button>';
+                        return '<button class="btn btn-danger eliminar-usuario" onclick="eliminarConvocatoria(' + row.id_convocatoria + ')"><i class="bi bi-trash"></i></button>';
                     },
                     "orderable": false
                 }
@@ -138,20 +136,83 @@
             responsive: true,
             stateSave: false
         });
+        $('#btnGuardarCambios').on('click', function (event) {
+            event.preventDefault();
+            $('.contenedorErrores').hide();
+            var formulario = $('#formularioConvocatoria'); // Obtener el formulario como un objeto DOM
+            if (formulario[0].checkValidity()) {
+                let fechaInicio = $('#fecha_inicio').val();
+                let fechaFin = $('#fecha_limite_documentos').val();
+                let validacionFechas = validaFechasConvocatoria(fechaInicio, fechaFin);
+                if (!validacionFechas) {
+                    return;
+                }
+                var datosFormulario = $('#formularioConvocatoria').serialize();
+                var descripcion = $('#descripcion').summernote('code');
+                datosFormulario += '&descripcionconvoactoria=' + encodeURIComponent(descripcion);
+                getObject('convocatorias/guardaCambiosConvocatoria', datosFormulario, function (response) {
+                    if (response.estatus === 'ok') {
+                        $('#tablaConvocatorias').DataTable().ajax.reload();
+                        $('#modalDetallesConvocatoria').modal('hide');
+                    } else {
+                        if (response.formularioValido === 'no') {
+                            let erroresHtml = '<ul>';
+                            for (var campo in response.errores) {
+                                erroresHtml += '<li>' + response.errores[campo] + '</li>';
+                            }
+                            erroresHtml += '</ul>';
+                            $('.contenedorErrores')
+                                .html(erroresHtml)
+                                .css({
+                                    'display': 'block',
+                                    'background-color': '#f8d7da',
+                                    'color': '#721c24',
+                                    'padding': '10px',
+                                    'border-radius': '5px',
+                                    'margin-top': '10px',
+                                });
+                            $('.contenedorErrores').show();
+                        } else {
+                            alert('Error al guardar los cambios.');
+                        }
+                    }
+                });
+            } else {
+                formulario.addClass('was-validated');
+            }
+
+        });
     });
-    function editarUsuario(id) {
+    function editarConvocatoria(id) {
         mostrarCargando();
-        getValue('usuarios/getDetallesUsuario', { id: id }, function (htmlDetalle) {
-            $('#tituloModalDetalleUsuario').html('Detalles del usuario');
-            $('#contenidoDetalleUsuario').html(htmlDetalle);
+        getValue('convocatorias/getDetallesConvocatoria', { id: id }, function (htmlDetalle) {
+            $('#tituloModalDetalleConvocatoria').html('Detalles de la convocatoria');
+            $('#contenidoDetalleConvocatoria').html(htmlDetalle);
             ocultarCargando();
             if (id == 0) {
-                $('#btnGuardarCambios').html('<i class="bi bi-floppy"></i> Agregar usuario');
+                $('#btnGuardarCambios').html('<i class="bi bi-floppy"></i> Agregar convocatoria');
             } else {
                 $('#btnGuardarCambios').html('<i class="bi bi-floppy"></i> Guardar cambios');
             }
-            $('#modalDetallesUsuario').modal('show');
+            $('#modalDetallesConvocatoria').modal('show');
         });
+    }
+    function validaFechasConvocatoria(fechaInicio, fechaFin) {
+        if (new Date(fechaInicio) > new Date(fechaFin)) {
+            $('.contenedorErrores')
+                .html('<h6>La fecha de inicio no puede ser mayor a la fecha de fin.</h6>')
+                .css({
+                    'display': 'block',
+                    'background-color': '#f8d7da',
+                    'color': '#721c24',
+                    'padding': '10px',
+                    'border-radius': '5px',
+                    'margin-top': '10px',
+                });
+            $('.contenedorErrores').show();
+            return false; // Detener el proceso si la validación falla
+        }
+        return true;
     }
 </script>
 <?= $this->endSection(); ?>
