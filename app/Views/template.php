@@ -28,8 +28,8 @@
     <script src="<?= base_url('js/popper.min.js'); ?>"></script>
     <script src="<?= base_url('js/bootstrap.min.js'); ?>"></script>
     <script src="<?= base_url('js/adminlte.js') ?>"></script>
-
     <script src="<?= base_url('js/apexcharts.min.js') ?>"></script>
+    <script src="<?= base_url('js/sweetalert2@11.js') ?>"></script>
     <script>
         var base_url = "<?= base_url(); ?>";
 

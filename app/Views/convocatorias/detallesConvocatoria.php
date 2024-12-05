@@ -18,6 +18,21 @@
             <div class="invalid-feedback">Por favor, ingrese la fecha.</div>
         </div>
         <div class="col-md-6">
+            <label for="fecha_fin" class="form-label">Fecha Fin</label>
+            <input type="date" class="form-control" id="fecha_fin" name="fecha_fin"
+                value="<?= $detallesConvocatoria['fecha_fin'] ?? ''; ?>" required>
+            <div class="invalid-feedback">Por favor, ingrese la fecha.</div>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label for="fecha_inicio_recepcion_documentos" class="form-label">Fecha Inicio Recepción de
+                Documentos.</label>
+            <input type="date" class="form-control" id="fecha_inicio_recepcion_documentos" name="fecha_inicio"
+                value="<?= $detallesConvocatoria['fecha_inicio_recepcion_documentos'] ?? ''; ?>" required>
+            <div class="invalid-feedback">Por favor, ingrese la fecha.</div>
+        </div>
+        <div class="col-md-6">
             <label for="fecha_limite_documentos" class="form-label">Fecha Límite de Documentos</label>
             <input type="date" class="form-control" id="fecha_limite_documentos" name="fecha_limite_documentos"
                 value="<?= $detallesConvocatoria['fecha_limite_documentos'] ?? ''; ?>" required>

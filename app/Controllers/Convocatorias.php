@@ -105,4 +105,18 @@ class Convocatorias extends BaseController
             return $this->response->setJSON(['estatus' => "no", 'mensaje' => 'No se puede acceder a este recurso']);
         }
     }
+
+    function eliminaConvocatoria()
+    {
+        if ($this->request->isAJAX()) {
+            $id        = esc($this->request->getPost('id'));
+            $resultado = $this->convocatoriasModel->eliminaConvocatoria($id);
+            return $this->response->setJSON([
+                'estatus' => $resultado ? "ok" : "no",
+                'mensaje' => $resultado ? 'Convocatoria eliminada' : ''
+            ]);
+        } else {
+            return $this->response->setJSON(['estatus' => "no", 'mensaje' => 'No se puede acceder a este recurso']);
+        }
+    }
 }

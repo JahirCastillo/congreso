@@ -30,7 +30,7 @@ class ConvocatoriasModel extends Model
     function getConvocatoria($id)
     {
         $builder = $this->db->table('convocatorias_congresos');
-        $builder->select('id_convocatoria as id,nombre,fecha_inicio,fecha_limite_documentos,descripcion,ubicacion,estatus');
+        $builder->select('id_convocatoria as id,nombre,fecha_inicio,fecha_fin,fecha_inicio_recepcion_documentos,fecha_limite_documentos,descripcion,ubicacion,estatus');
         $builder->where('id_convocatoria', $id);
         $convocatoria = $builder->get()->getRowArray();
         return $convocatoria;
@@ -53,6 +53,20 @@ class ConvocatoriasModel extends Model
         $builder = $this->db->table('convocatorias_congresos');
         $builder->where('id_convocatoria', $id);
         $builder->update($datos);
+        if ($this->db->transStatus() === FALSE) {
+            $this->db->transRollback();
+            return false;
+        } else {
+            $this->db->transCommit();
+            return true;
+        }
+    }
+
+    function eliminaConvocatoria($id)
+    {
+        $builder = $this->db->table('convocatorias_congresos');
+        $builder->where('id_convocatoria', $id);
+        $builder->delete();
         if ($this->db->transStatus() === FALSE) {
             $this->db->transRollback();
             return false;

@@ -143,7 +143,9 @@
             if (formulario[0].checkValidity()) {
                 let fechaInicio = $('#fecha_inicio').val();
                 let fechaFin = $('#fecha_limite_documentos').val();
-                let validacionFechas = validaFechasConvocatoria(fechaInicio, fechaFin);
+                let fechaInicioRecepcion = $('#fecha_inicio_recepcion_documentos').val();
+                let fechaLimiteDocumentos = $('#fecha_limite_documentos').val();
+                let validacionFechas = validaFechasConvocatoria(fechaInicio, fechaFin, fechaInicioRecepcion, fechaLimiteDocumentos);
                 if (!validacionFechas) {
                     return;
                 }
@@ -197,8 +199,41 @@
             $('#modalDetallesConvocatoria').modal('show');
         });
     }
-    function validaFechasConvocatoria(fechaInicio, fechaFin) {
-        if (new Date(fechaInicio) > new Date(fechaFin)) {
+
+    function eliminarConvocatoria(id) {
+        Swal.fire({
+            title: '¿Está seguro de eliminar la convocatoria?',
+            text: "No podrá revertir esto",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sí, eliminar',
+            cancelButtonText: 'Cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+            getObject('convocatorias/eliminaConvocatoria', { id: id }, function (response) {
+                if (response.estatus === 'ok') {
+                $('#tablaConvocatorias').DataTable().ajax.reload();
+                Swal.fire(
+                    'Eliminado',
+                    'La convocatoria ha sido eliminada.',
+                    'success'
+                );
+                } else {
+                Swal.fire(
+                    'Error!',
+                    'Hubo un problema al eliminar la convocatoria.',
+                    'error'
+                );
+                }
+            });
+            }
+        });
+    }
+
+    function validaFechasConvocatoria(fechaInicio, fechaFin, fechaInicioRecepcion, fechaLimiteDocumentos) {
+        if (new Date(fechaInicio) > new Date(fechaFin) || new Date(fechaInicioRecepcion) > new Date(fechaLimiteDocumentos)) {
             $('.contenedorErrores')
                 .html('<h6>La fecha de inicio no puede ser mayor a la fecha de fin.</h6>')
                 .css({
