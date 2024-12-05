@@ -28,7 +28,7 @@
         <div class="col-md-6">
             <label for="fecha_inicio_recepcion_documentos" class="form-label">Fecha Inicio Recepción de
                 Documentos.</label>
-            <input type="date" class="form-control" id="fecha_inicio_recepcion_documentos" name="fecha_inicio"
+            <input type="date" class="form-control" id="fecha_inicio_recepcion_documentos" name="fecha_inicio_recepcion_documentos"
                 value="<?= $detallesConvocatoria['fecha_inicio_recepcion_documentos'] ?? ''; ?>" required>
             <div class="invalid-feedback">Por favor, ingrese la fecha.</div>
         </div>

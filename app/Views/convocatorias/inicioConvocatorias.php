@@ -23,7 +23,7 @@
                                     <th></th>
                                     <th>Nombre</th>
                                     <th>Fecha inicio</th>
-                                    <th>Fecha recepción doc.</th>
+                                    <th>Fecha fin</th>
                                     <th>Ubicación</th>
                                     <th>Estatus</th>
                                     <th>Editar</th>
@@ -79,7 +79,7 @@
                 },
                 { "data": "nombre" },
                 { "data": "fecha_inicio" },
-                { "data": "fecha_limite_documentos" },
+                { "data": "fecha_fin" },
                 { "data": "ubicacion" },
                 { "data": "estatus" },
                 {
@@ -96,7 +96,6 @@
                     },
                     "orderable": false
                 }
-
             ],
             "lengthMenu": [
                 [10, 25, 50, 100],
@@ -142,7 +141,7 @@
             var formulario = $('#formularioConvocatoria'); // Obtener el formulario como un objeto DOM
             if (formulario[0].checkValidity()) {
                 let fechaInicio = $('#fecha_inicio').val();
-                let fechaFin = $('#fecha_limite_documentos').val();
+                let fechaFin = $('#fecha_fin').val();
                 let fechaInicioRecepcion = $('#fecha_inicio_recepcion_documentos').val();
                 let fechaLimiteDocumentos = $('#fecha_limite_documentos').val();
                 let validacionFechas = validaFechasConvocatoria(fechaInicio, fechaFin, fechaInicioRecepcion, fechaLimiteDocumentos);

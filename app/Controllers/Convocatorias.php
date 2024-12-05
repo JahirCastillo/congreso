@@ -85,12 +85,14 @@ class Convocatorias extends BaseController
 
             $id    = esc($this->request->getPost('id'));
             $datos = [
-                'nombre'                  => esc($this->request->getPost('nombre')),
-                'fecha_inicio'            => esc($this->request->getPost('fecha_inicio')),
-                'fecha_limite_documentos' => esc($this->request->getPost('fecha_limite_documentos')),
-                'descripcion'             => esc($this->request->getPost('descripcion')),
-                'ubicacion'               => esc($this->request->getPost('ubicacion')),
-                'estatus'                 => esc($this->request->getPost('estatus'))
+                'nombre'                            => esc($this->request->getPost('nombre')),
+                'fecha_inicio'                      => esc($this->request->getPost('fecha_inicio')),
+                'fecha_fin'                         => esc($this->request->getPost('fecha_fin')),
+                'fecha_inicio_recepcion_documentos' => esc($this->request->getPost('fecha_inicio_recepcion_documentos')),
+                'fecha_limite_documentos'           => esc($this->request->getPost('fecha_limite_documentos')),
+                'descripcion'                       => $this->request->getPost('descripcionconvoactoria'),
+                'ubicacion'                         => esc($this->request->getPost('ubicacion')),
+                'estatus'                           => esc($this->request->getPost('estatus'))
             ];
 
             $resultado = $id == 0

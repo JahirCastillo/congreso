@@ -6,7 +6,7 @@ class ConvocatoriasModel extends Model
 
     public function getDatosConvocatorias($limit, $offset, $search = '', $orderColumn = 'id_convocatoria', $orderDir = 'asc')
     {
-        $columnas = ['id_convocatoria', 'nombre', 'fecha_inicio', 'fecha_limite_documentos', 'ubicacion', 'estatus'];
+        $columnas = ['id_convocatoria', 'nombre', 'fecha_inicio', 'fecha_fin', 'ubicacion', 'estatus'];
         $table    = 'convocatorias_congresos';
         $builder  = $this->db->table($table);
         $builder->select(implode(',', $columnas));
@@ -74,5 +74,14 @@ class ConvocatoriasModel extends Model
             $this->db->transCommit();
             return true;
         }
+    }
+
+    function getConvocatoriasDisponibles()
+    {
+        $builder = $this->db->table('convocatorias_congresos');
+        $builder->select('id_convocatoria as id,nombre,fecha_inicio,fecha_fin,fecha_inicio_recepcion_documentos,fecha_limite_documentos,descripcion,ubicacion,estatus');
+        $builder->where('estatus', 'A');
+        $convocatorias = $builder->get()->getResultArray();
+        return $convocatorias;
     }
 }

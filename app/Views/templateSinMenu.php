@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/favicon.png" type="image/png">
-    <title><?= esc($config->nombreSistema)?></title>
+    <title><?= esc($config->nombreSistema) ?></title>
     <!-- Bootstrap CSS -->
     <link href="<?= base_url('css/bootstrap.min.css'); ?>" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('css/Adminlte/adminlte.min.css'); ?>">
@@ -42,7 +42,7 @@
         }
     </style>
     <script>
-        var base_url="<?= base_url(); ?>";
+        var base_url = "<?= base_url(); ?>";
     </script>
 </head>
 
@@ -50,7 +50,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                Sistema de consulta de perfil de ingreso
+                CICT
             </a>
         </div>
     </nav>
