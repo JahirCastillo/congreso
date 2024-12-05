@@ -12,7 +12,7 @@ class Usuarios extends BaseController
     }
     public function index()
     {
-        if (!session()->has('nombre')) {
+        if (!session()->has('usuarioLogueado')) {
             return redirect()->to('');
         }
         return view('usuarios/usuariosInicio');

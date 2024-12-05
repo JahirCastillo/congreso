@@ -38,17 +38,14 @@
         <div class="col-md-6 form-side">
             <div class="login-form">
                 <div class="text-center">
-                    <img src="https://planea.uv.mx/planea/img/lis.png" alt="Logo" class="logo logolis">
+                    
                 </div>
                 <div class="mt-5">
                     <h3 class="text-center mb-4">Inicio de sesión</h3>
                 </div>
                 <div class="text-center mt-3 mb-5">
-                    <small>Ahora ingrese con su cuenta institucional</small> <br> <small> tal como ingresa usted a
-                        MiUV
-                    </small>
                 </div>
-                <span class="badge rounded-pill text-bg-info mt-3 mb-3" id="msg_acceso"></span>
+                <span class="badge rounded-pill text-bg-info mt-3 mb-3" id="msgAcceso"></span>
                 <?php if (isset($validation)): ?>
                     <div class="alert alert-danger">
                         <?= $validation->listErrors() ?>
@@ -56,7 +53,8 @@
                 <?php endif; ?>
                 <form id="formAcceso" class="needs-validation" novalidate>
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuario" required>
+                        <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuario"
+                            required>
                         <div class="invalid-feedback">Por favor rellena el campo.</div>
                     </div>
                     <div class="mb-3 position-relative">
@@ -78,7 +76,7 @@
 
 <script>
     $(document).ready(function () {
-        $('#msg_acceso').hide();
+        $('#msgAcceso').hide();
         // Recuperar el email almacenado en localStorage al cargar la página
         const storedUsuario = localStorage.getItem('usuario');
         if (storedUsuario) {
@@ -107,20 +105,19 @@
                     usuario: usuario,
                     password: password
                 }, function (data) {
-                    if (data.IsValid == true) {
-                        if ($('#rememberMe').is(':checked')) {
-                            localStorage.setItem('usuario', usuario);
-                        } else {
-                            localStorage.removeItem('usuario');
-                        }
-                        redirectByPost('login/ponensesion', {
+                    if (!data) {
+                        $('#msgAcceso').show();
+                        $('#msgAcceso').text('Error: No se recibió respuesta del servidor.');
+                        ocultarCargando();
+                        return;
+                    }
+                    if (data.esValido == true) {
+                        $('#rememberMe').is(':checked') ? localStorage.setItem('usuario', usuario) : localStorage.removeItem('usuario');
+                        redirectByPost('login/ponEnSesion', {
                             'usuario': usuario
                         }, false);
                     } else {
-                        if (data.IsValid == false) {
-                            $('#msg_acceso').show();
-                            $('#msg_acceso').text(data.mensaje);
-                        }
+                        $('#msgAcceso').show().text(data.mensaje);
                     }
                     ocultarCargando();
                 });

@@ -3,16 +3,12 @@
 
 <head>
     <?php
-    $config      = config('App\Config\MiConfiguracion');
-    $anio        = $config->anio;
-    $accesoModel = new \App\Models\AccesoModel();
-    $modulos     = array();
-    $modulos     = $accesoModel->obtieneModulos();
+    $config = config('App\Config\MiConfiguracion');
     ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="<?= base_url('./images/favicon.png'); ?>" type="image/png">
-    <title><?= esc($config->nombreSistema) . " " . $anio ?></title>
+    <title><?= esc($config->nombreSistema) ?></title>
     <!-- Bootstrap CSS -->
     <link href="<?= base_url('css/bootstrap.min.css'); ?>" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('css/Adminlte/adminlte.min.css'); ?>">
@@ -83,11 +79,10 @@
                                 class="user-image rounded-circle shadow" alt="User Image"> <span
                                 class="d-none d-md-inline"><?php echo session('nombre'); ?></span> </a>
                         <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end"> <!--begin::User Image-->
-                            <li class="user-header text-bg-primary"> <img src="<?= base_url('images/perfil.png'); ?>"
-                                    class="rounded-circle shadow" alt="User Image">
+                            <li class="user-header text-bg-primary">
                                 <p>
                                     <?= session('nombre'); ?>
-                                    <small><?= session(val: 'rol'); ?></small>
+                                    <small></small>
                                 </p>
                             </li> <!--end::User Image--> <!--begin::Menu Body-->
                             <li class="user-body"> <!--begin::Row-->
@@ -107,10 +102,8 @@
         <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark"> <!--begin::Sidebar Brand-->
             <div class="sidebar-brand">
                 <a class="brand-link">
-                    <img src="<?= base_url('images/logoscopitransparente.png'); ?>" alt="Scopi Logo"
-                        class="brand-image opacity-75 shadow">
-                    <span class="brand-text fw-light" title="Sistema de consulta de perfil de ingreso">Scopi
-                        <?= $anio; ?></span>
+                    <span class="brand-text fw-light"
+                        title="Sistema de consulta de perfil de ingreso"><strong><?= esc($config->nombreSistema) ?></strong></span>
                 </a>
                 <!--end::Brand Link-->
             </div> <!--end::Sidebar Brand--> <!--begin::Sidebar Wrapper-->
@@ -118,16 +111,37 @@
                 <nav class="mt-2"> <!--begin::Sidebar Menu-->
                     <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu"
                         data-accordion="false">
-                        <?php if (!empty($modulos)): ?>
-                            <?php foreach ($modulos as $modulo): ?>
-                                <li class="nav-item">
-                                    <a href="<?= base_url(esc($modulo['mod_url'])); ?>" class="nav-link">
-                                        <?= $modulo['mod_icon']; ?>
-                                        <p><?= esc($modulo['mod_nombre']); ?></p>
-                                    </a>
-                                </li>
-                            <?php endforeach; ?>
-                        <?php endif; ?>
+                        <li class="nav-item">
+                            <a href="<?= base_url('index.php/inicio'); ?>" class="nav-link">
+                                <i class="bi bi-house-door me-1"></i> <span> Inicio</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url('index.php/convocatorias'); ?>" class="nav-link">
+                                <i class="bi bi-megaphone me-1"></i> <span> Convocatorias</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url('index.php/itinerarios'); ?>" class="nav-link">
+                                <i class="bi bi-calendar-event me-1"></i> <span> Itinerarios</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url('index.php/investigadores'); ?>" class="nav-link">
+                                <i class="bi bi-search me-1"></i> <span> Investigadores</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url('index.php/revisores'); ?>" class="nav-link">
+                                <i class="bi bi-check-circle me-1"></i> <span> Revisores</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url('index.php/usuarios'); ?>" class="nav-link">
+                                <i class="bi bi-people me-1"></i> <span> Usuarios del sistema</span>
+                            </a>
+                        </li>
+
                     </ul> <!--end::Sidebar Menu-->
                 </nav>
             </div> <!--end::Sidebar Wrapper-->
