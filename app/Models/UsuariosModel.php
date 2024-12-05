@@ -8,12 +8,12 @@ class UsuariosModel extends Model
         $filtros          = session()->get('filtros');
         $filtros          = json_decode($filtros, true);
         $columnasBusqueda = ['usu_login', 'usu_nombre', 'usu_apaterno', 'usu_amaterno', 'rol_nombre', 'usu_correo'];
-        $table            = 'scp_usuarios';
+        $table            = 'usuarios';
         $builder          = $this->db->table($table);
 
         // Seleccionar columnas para la consulta
         $builder->select("usu_id as id,usu_login as login, CONCAT(COALESCE(usu_nombre,''),' ',COALESCE(usu_apaterno,''),' ',COALESCE(usu_amaterno,'')) as nombre, rol_nombre as rolNombre, usu_correo correo, case usu_estatuscuenta when 1 then 'Activa' when 0 then 'Inactiva' end as estatusCuenta");
-        $builder->join('scp_roles', 'rol_id = usu_rol', 'left');
+        $builder->join('roles', 'rol_id = usu_rol', 'left');
 
 
         // Aplicar filtro de búsqueda en columnas específicas
