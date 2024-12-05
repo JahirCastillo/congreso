@@ -23,16 +23,6 @@ framework estarán expuestos.
 
 **Por favor** lee la guía del usuario para una mejor explicación de cómo funciona CI4.
 
-## Gestión del Repositorio
-
-Usamos problemas de GitHub, en nuestro repositorio principal, para rastrear **ERRORES** y para rastrear paquetes de trabajo de **DESARROLLO** aprobados.
-Usamos nuestro [foro](http://forum.codeigniter.com) para proporcionar SOPORTE y discutir
-SOLICITUDES DE FUNCIONES.
-
-Este repositorio es uno de "distribución", construido por nuestro script de preparación de lanzamiento.
-Los problemas con él pueden ser planteados en nuestro foro, o como problemas en el repositorio principal.
-
-
 ## Requisitos del Servidor
 
 Se requiere PHP versión 8.1 o superior, con las siguientes extensiones instaladas:
