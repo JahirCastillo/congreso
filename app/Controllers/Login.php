@@ -29,7 +29,6 @@ class Login extends BaseController
         ];
 
         if (!$this->validate($rules)) {
-            // Si la validación falla
             $errors                    = $this->validator->getErrors();
             $arrayRespuesta['IsValid'] = false;
             $arrayRespuesta['mensaje'] = implode(", ", $errors);

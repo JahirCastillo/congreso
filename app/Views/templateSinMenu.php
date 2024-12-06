@@ -7,14 +7,15 @@
     ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <link rel="icon" href="<?= base_url('/images/favicon.png'); ?>" type="image/png">
     <title><?= esc($config->nombreSistema) ?></title>
     <!-- Bootstrap CSS -->
     <link href="<?= base_url('css/bootstrap.min.css'); ?>" rel="stylesheet">
+
     <link rel="stylesheet" href="<?= base_url('css/Adminlte/adminlte.min.css'); ?>">
-    <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
-    <script src="./js/jquery-3.7.1.min.js"></script>
-    <script src="./js/utilerias.js"></script>
+    <link rel="stylesheet" href="<?= base_url('./css/bootstrap-icons.min.css'); ?>">
+    <script src="<?= base_url('/js/jquery-3.7.1.min.js'); ?>"></script>
+    <script src="<?= base_url('/js/utilerias.js'); ?>"></script>
     <style>
         body,
         html {

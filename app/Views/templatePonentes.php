@@ -90,7 +90,8 @@
                                     <div class="col-3 text-center"></div>
                                     <div class="col-3 text-center"></div>
                                     <div class="col-6 text-center">
-                                        <a href="<?= base_url('index.php/login/destruirSesion'); ?>">Cerrar sesión</a>
+                                        <a href="<?= base_url('index.php/registro/destruirSesion'); ?>">Cerrar
+                                            sesión</a>
                                     </div>
                                 </div> <!--end::Row-->
                             </li> <!--end::Menu Body--> <!--begin::Menu Footer-->
@@ -112,36 +113,10 @@
                     <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu"
                         data-accordion="false">
                         <li class="nav-item">
-                            <a href="<?= base_url('index.php/inicio'); ?>" class="nav-link">
-                                <i class="bi bi-house-door me-1"></i> <span> Inicio</span>
+                            <a href="<?= base_url('index.php/ponentes'); ?>" class="nav-link">
+                                <i class="bi bi-megaphone me-1"></i> <span> Ponencias</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="<?= base_url('index.php/convocatorias'); ?>" class="nav-link">
-                                <i class="bi bi-megaphone me-1"></i> <span> Convocatorias</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="<?= base_url('index.php/itinerarios'); ?>" class="nav-link">
-                                <i class="bi bi-calendar-event me-1"></i> <span> Itinerarios</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="<?= base_url('index.php/investigadores'); ?>" class="nav-link">
-                                <i class="bi bi-search me-1"></i> <span> Investigadores</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="<?= base_url('index.php/revisores'); ?>" class="nav-link">
-                                <i class="bi bi-check-circle me-1"></i> <span> Revisores</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="<?= base_url('index.php/usuarios'); ?>" class="nav-link">
-                                <i class="bi bi-people me-1"></i> <span> Usuarios del sistema</span>
-                            </a>
-                        </li>
-
                     </ul> <!--end::Sidebar Menu-->
                 </nav>
             </div> <!--end::Sidebar Wrapper-->

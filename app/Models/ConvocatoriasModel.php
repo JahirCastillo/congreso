@@ -37,8 +37,14 @@ class ConvocatoriasModel extends Model
     }
     function insertaConvocatoria($datos)
     {
+        // Start transaction
+        $this->db->transStart();
         $builder = $this->db->table('convocatorias_congresos');
+        $builder->where('estatus', 'A');
+        $builder->update(['estatus' => 'I']);
         $builder->insert($datos);
+        $this->db->transComplete();
+
         if ($this->db->transStatus() === FALSE) {
             $this->db->transRollback();
             return false;
@@ -51,6 +57,11 @@ class ConvocatoriasModel extends Model
     function actualizaConvocatoria($id, $datos)
     {
         $builder = $this->db->table('convocatorias_congresos');
+        if (isset($datos['estatus']) && $datos['estatus'] === 'A') {
+            $builder->where('estatus', 'A');
+            $builder->update(['estatus' => 'I']);
+        }
+
         $builder->where('id_convocatoria', $id);
         $builder->update($datos);
         if ($this->db->transStatus() === FALSE) {

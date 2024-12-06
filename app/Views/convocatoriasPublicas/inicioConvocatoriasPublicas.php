@@ -42,6 +42,7 @@
                             <div class="mb-3">
                                 <?= $convocatoria['descripcion']; ?>
                             </div>
+                            <a href="<?= base_url('registro'); ?>" class="btn btn-primary">Ir al Registro</a>
                         </div>
                     </div>
                 </div>
