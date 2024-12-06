@@ -30,7 +30,7 @@ class Ponencias extends BaseController
         $datos['idPonencia'] = $idPonencia;
         $datos['tematicas']  = $this->ponenciasModel->getTematicas();
         $datos['autores']    = $this->ponenciasModel->getAutores($idPonencia);
-        $datos['ponencia']   = ['po_id_ponencia' => 0,'po_estatus'=>'', 'po_titulo' => '', 'po_id_tematica' => 0, 'po_id_subtematica' => 0, 'po_palabrasclave' => '', 'po_resumen' => ''];
+        $datos['ponencia']   = ['po_id_ponencia' => 0, 'po_estatus' => '', 'po_titulo' => '', 'po_id_tematica' => 0, 'po_id_subtematica' => 0, 'po_palabrasclave' => '', 'po_resumen' => ''];
         return view('ponencias/nuevaPonencia', $datos);
     }
     function editar($idPonencia)
@@ -73,7 +73,7 @@ class Ponencias extends BaseController
                 mkdir($rutaCarpeta, 0755, true);
             }
             $archivo       = $this->request->getFile('archivo');
-            $nombreArchivo = $archivo->getRandomName() . "_" . $dataPonencia['po_revisiones'];
+            $nombreArchivo = $dataPonencia['po_revisiones'] . '.' . $archivo->getExtension();
             $archivo->move($rutaCarpeta, $nombreArchivo);
 
             $ponenciaId = $this->ponenciasModel->agregaPonencia($dataPonencia);
@@ -98,7 +98,7 @@ class Ponencias extends BaseController
         }
         $archivo        = $this->request->getFile('archivo');
         $numeroRevision = esc($this->request->getPost('po_revisiones')) + 1;
-        $nombreArchivo  = $archivo->getRandomName() . "_" . $numeroRevision;
+        $nombreArchivo  = $numeroRevision . '.' . $archivo->getExtension();
         $archivo->move($rutaCarpeta, $nombreArchivo);
         $dataPonencia = [
             'po_revisiones' => $numeroRevision,
