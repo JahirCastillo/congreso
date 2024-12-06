@@ -30,6 +30,7 @@ class Ponencias extends BaseController
         $datos['idPonencia'] = $idPonencia;
         $datos['tematicas']  = $this->ponenciasModel->getTematicas();
         $datos['autores']    = $this->ponenciasModel->getAutores($idPonencia);
+        $datos['ponencia']   = ['po_id_ponencia' => 0,'po_estatus'=>'', 'po_titulo' => '', 'po_id_tematica' => 0, 'po_id_subtematica' => 0, 'po_palabrasclave' => '', 'po_resumen' => ''];
         return view('ponencias/nuevaPonencia', $datos);
     }
     function editar($idPonencia)

@@ -3,14 +3,6 @@ namespace App\Models;
 use CodeIgniter\Model;
 class ItinerarioModel extends Model
 {
-    public function consultaPersonalizada()
-    {
-        $sql   = "SELECT * FROM tu_tabla WHERE condicion = 'valor'";
-        $db    = db_connect();
-        $query = $db->query($sql);
-        return $query->getResultArray();
-    }
-
     public function ponencias()
     {
         $sql   = "SELECT po_id_ponencia, po_hora_inicio, po_hora_fin,

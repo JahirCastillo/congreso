@@ -1,5 +1,6 @@
 <?= $this->extend('templatePonentes'); ?>
 <?= $this->section('content'); ?>
+<?php $nombrePonente = session('nombrePonente'); ?>
 <div class="content-wrapper">
     <div class="content-header">
         <div class="container">
@@ -143,8 +144,10 @@
                                 <form action="<?= site_url('ponencias/actualizarArchivo') ?>" method="post"
                                     enctype="multipart/form-data">
                                     <?= csrf_field(); ?>
-                                    <input type="hidden" name="po_id_ponencia" value="<?= $idPonencia; ?>" class="habilitar">
-                                    <input type="hidden" name="po_revisiones" value="<?= $ponencia['po_revisiones']; ?>"  class="habilitar">
+                                    <input type="hidden" name="po_id_ponencia" value="<?= $idPonencia; ?>"
+                                        class="habilitar">
+                                    <input type="hidden" name="po_revisiones" value="<?= $ponencia['po_revisiones']; ?>"
+                                        class="habilitar">
                                     <div class="mb-3">
                                         <label for="archivo" class="form-label">Subir Archivo</label>
                                         <input type="file" name="archivo" id="archivo" class="form-control habilitar"
@@ -170,11 +173,35 @@
                         <a href="<?= site_url('ponencias') ?>" class="btn btn-secondary">
                             <i class="fas fa-times"></i> Regresar
                         </a>
+                    <?php elseif ($ponencia['po_estatus'] == 'A'): ?>
+                        <div class="alert alert-success" role="alert">
+                            La ponencia ha sido aceptada. ¡Felicidades! Se tiene que presentar el [fecha] a las [hora].
+                        </div>
+                        <div class="text-center mt-3"></div>
+                        <button type="button" class="btn btn-info"
+                            onclick="imprimirConstancia('<?= $nombrePonente; ?>','<?= $ponencia['po_titulo'] ?>')">
+                            <i class="fas fa-print"></i> Imprimir constancia
+                        </button>
+                        <script>
+                            $(document).ready(function () {
+                                $('.table tbody tr').each(function () {
+                                    const printButton = $('<button type="button" class="btn btn-info">Imprimir constancia</button>');
+                                    $(this).find('td:last').append(printButton);
+                                    printButton.on('click', function () {
+                                        imprimirConstancia($(this).closest('tr').find('td:first').find('input').val(), $('#po_titulo').val());
+                                    });
+                                });
+                            });
+                            function imprimirConstancia(nombre,titulo){
+                                alert(`Imprimiendo constancia para ${nombre} con el título ${titulo}`);
+                            }
+                        </script>
                     <?php endif; ?>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <script>
