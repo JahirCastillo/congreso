@@ -192,8 +192,11 @@
                                     });
                                 });
                             });
-                            function imprimirConstancia(nombre,titulo){
-                                alert(`Imprimiendo constancia para ${nombre} con el título ${titulo}`);
+                            function imprimirConstancia(nombre, titulo) {
+                                const ponente = encodeURIComponent(nombre);
+                                const ponencia = encodeURIComponent(titulo);
+                                document.getElementById('constancia').src = `http://148.226.1.32/ponencias/mostrarconstancia?ponente=${ponente}&ponencia=${ponencia}`;
+                                $('#constanciaModal').modal('show');
                             }
                         </script>
                     <?php endif; ?>
@@ -202,6 +205,21 @@
         </div>
     </div>
 </div>
+<div class="modal fade" id="constanciaModal" tabindex="-1" aria-labelledby="constanciaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="constanciaModalLabel">Constancia</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img id="constancia" alt="Constancia" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script>

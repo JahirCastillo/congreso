@@ -114,4 +114,42 @@ class Ponencias extends BaseController
         return $this->response->setJSON($subtematicas);
     }
 
+    public function mostrarConstancia()
+    {
+        ob_clean();
+        $ponente          = $this->request->getGet('ponente') ?? 'Ponente Desconocido';
+        $ponencia         = $this->request->getGet('ponencia') ?? 'Ponencia Desconocida';
+        $archivoplantilla = './images/plantilla.jpg';
+        $fuente           = './images/Roboto-Bold.ttf';
+        $anchodelaimagen  = 2045;
+
+        if (!file_exists($archivoplantilla)) {
+            return $this->response->setStatusCode(404)->setBody('No se encontró la plantilla.');
+        }
+
+        if (!file_exists($fuente)) {
+            return $this->response->setStatusCode(404)->setBody('No se encontró la fuente.');
+        }
+
+        $imagen = imagecreatefromjpeg($archivoplantilla);
+
+        if (!$imagen) {
+            return $this->response->setStatusCode(500)->setBody('No se pudo crear la imagen.');
+        }
+        $color        = imagecolorallocate($imagen, 0, 0, 0);
+        $bboxPonencia = imagettfbbox(40, 0, $fuente, $ponencia);
+        $xPonencia    = ($anchodelaimagen - ($bboxPonencia[2] - $bboxPonencia[0])) / 2;
+
+        $bboxPonente = imagettfbbox(70, 0, $fuente, $ponente);
+        $xPonente    = ($anchodelaimagen - ($bboxPonente[2] - $bboxPonente[0])) / 2;
+
+        imagettftext($imagen, 40, 0, $xPonencia, 950, $color, $fuente, $ponencia);
+        imagettftext($imagen, 70, 0, $xPonente, 1220, $color, $fuente, $ponente);
+
+        imagejpeg($imagen);
+        imagedestroy($imagen);
+
+        return $this->response->noCache()->setHeader('Content-Type', 'image/jpeg');
+    }
+
 }
