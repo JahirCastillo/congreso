@@ -122,18 +122,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?= base_url('index.php/itinerarios'); ?>" class="nav-link">
+                            <a href="<?= base_url('index.php/itinerario'); ?>" class="nav-link">
                                 <i class="bi bi-calendar-event me-1"></i> <span> Itinerarios</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="<?= base_url('index.php/investigadores'); ?>" class="nav-link">
-                                <i class="bi bi-search me-1"></i> <span> Investigadores</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="<?= base_url('index.php/revisores'); ?>" class="nav-link">
-                                <i class="bi bi-check-circle me-1"></i> <span> Revisores</span>
                             </a>
                         </li>
                         <li class="nav-item">
