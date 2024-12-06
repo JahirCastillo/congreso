@@ -4,6 +4,7 @@
 <head>
     <?php
     $config = config('App\Config\MiConfiguracion');
+    $rol    = session('rol');
     ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -111,26 +112,35 @@
                 <nav class="mt-2"> <!--begin::Sidebar Menu-->
                     <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu"
                         data-accordion="false">
-                        <li class="nav-item">
-                            <a href="<?= base_url('index.php/inicio'); ?>" class="nav-link">
-                                <i class="bi bi-house-door me-1"></i> <span> Inicio</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="<?= base_url('index.php/convocatorias'); ?>" class="nav-link">
-                                <i class="bi bi-megaphone me-1"></i> <span> Convocatorias</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="<?= base_url('index.php/itinerario'); ?>" class="nav-link">
-                                <i class="bi bi-calendar-event me-1"></i> <span> Itinerarios</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="<?= base_url('index.php/usuarios'); ?>" class="nav-link">
-                                <i class="bi bi-people me-1"></i> <span> Usuarios del sistema</span>
-                            </a>
-                        </li>
+                        <?php if ($rol != 1): ?>
+                            <li class="nav-item">
+                                <a href="<?= base_url('index.php/revisores'); ?>" class="nav-link">
+                                    <i class="bi bi-house-door me-1"></i> <span> Inicio</span>
+                                </a>
+                            </li>
+                        <?php endif; ?>
+                        <?php if ($rol == 1): ?>
+                            <li class="nav-item">
+                                <a href="<?= base_url('index.php/inicio'); ?>" class="nav-link">
+                                    <i class="bi bi-house-door me-1"></i> <span> Inicio</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="<?= base_url('index.php/convocatorias'); ?>" class="nav-link">
+                                    <i class="bi bi-megaphone me-1"></i> <span> Convocatorias</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="<?= base_url('index.php/itinerario'); ?>" class="nav-link">
+                                    <i class="bi bi-calendar-event me-1"></i> <span> Itinerarios</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="<?= base_url('index.php/usuarios'); ?>" class="nav-link">
+                                    <i class="bi bi-people me-1"></i> <span> Usuarios del sistema</span>
+                                </a>
+                            </li>
+                        <?php endif; ?>
 
                     </ul> <!--end::Sidebar Menu-->
                 </nav>

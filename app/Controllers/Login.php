@@ -22,7 +22,6 @@ class Login extends BaseController
     public function validaUsuario(): string
     {
         helper(['form', 'validation']);
-        // Definir reglas de validación
         $rules = [
             'usuario'  => 'required',
             'password' => 'required'
@@ -76,6 +75,7 @@ class Login extends BaseController
         $session->set('idUsuario', $datos->usu_id);
         $session->set('login', $datos->usu_login);
         $session->set('foto', $datos->usu_imagen);
+        $session->set('rol', $datos->usu_rol);
     }
 
     public function destruirSesion()
