@@ -12,6 +12,10 @@ class Convocatorias extends BaseController
             redirect()->to('')->send();
             exit;
         }
+        if (session('rol') != 1) {
+            redirect()->to('revisores')->send();
+            exit;
+        }
         $this->convocatoriasModel = model(ConvocatoriasModel::class);
     }
 
