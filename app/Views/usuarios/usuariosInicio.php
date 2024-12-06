@@ -23,7 +23,7 @@
                                     <th></th>
                                     <th>Usuario</th>
                                     <th>Nombre</th>
-                                    <th>Rol</th>
+                                    <th>Temática</th>
                                     <th>Correo</th>
                                     <th>Estatus</th>
                                     <th>Editar</th>
@@ -79,7 +79,7 @@
                 },
                 { "data": "login" },
                 { "data": "nombre" },
-                { "data": "rolNombre" },
+                { "data": "tematica" },
                 { "data": "correo" },
                 { "data": "estatusCuenta" },
                 {
