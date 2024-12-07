@@ -113,7 +113,7 @@
                     <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu"
                         data-accordion="false">
                         <li class="nav-item">
-                            <a href="<?= base_url('index.php/ponentes'); ?>" class="nav-link">
+                            <a href="<?= base_url('index.php/ponencias'); ?>" class="nav-link">
                                 <i class="bi bi-megaphone me-1"></i> <span> Ponencias</span>
                             </a>
                         </li>

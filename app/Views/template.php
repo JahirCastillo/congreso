@@ -114,7 +114,7 @@
                         data-accordion="false">
                         <?php if ($rol != 1): ?>
                             <li class="nav-item">
-                                <a href="<?= base_url('index.php/revisores'); ?>" class="nav-link">
+                                <a href="<?= base_url('index.php/revisor'); ?>" class="nav-link">
                                     <i class="bi bi-house-door me-1"></i> <span> Inicio</span>
                                 </a>
                             </li>
