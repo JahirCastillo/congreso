@@ -20,13 +20,14 @@ class RegistroModel extends Model
         }
         $builder = $this->db->table('ponentes');
         $builder->insert($datosPonente);
+        $idPonente = $this->db->insertID();
         if ($this->db->transStatus() === FALSE) {
             $this->db->transRollback();
             $respuesta['esValido'] = false;
             $respuesta['mensaje']  = 'Error al guardar los datos.';
         } else {
             $this->db->transCommit();
-            session()->set('idPonente', $this->db->insertID());
+            session()->set('idPonente', $idPonente);
             session()->set('nombre', $datosPonente['nombre']);
             session()->set('emailPonente', $datosPonente['email']);
             session()->set('institucion', $datosPonente['institucion']);
