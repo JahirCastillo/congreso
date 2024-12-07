@@ -4,17 +4,17 @@ namespace App\Controllers;
 
 class Itinerario extends BaseController
 {
-    public function __construct()
-    {
-        if (!session()->has('nombre')) {
-            redirect()->to('')->send();
-            exit;
-        }
-        if (session('rol') != 1) {
-            redirect()->to('revisores')->send();
-            exit;
-        }
-    }
+     public function __construct()
+     {
+         if (!session()->has('nombre')) {
+             redirect()->to('')->send();
+             exit;
+         }
+         if (session('rol') != 1) {
+             redirect()->to('revisores')->send();
+             exit;
+         }
+     }
     function index()
     {
         $model             = new \App\Models\ItinerarioModel();
@@ -25,7 +25,6 @@ class Itinerario extends BaseController
 
     function actualizarHora()
     {
-        //solo si es ajax
         if ($this->request->isAJAX()) {
             $model = new \App\Models\ItinerarioModel();
             $model->actualizarHora(
@@ -36,5 +35,4 @@ class Itinerario extends BaseController
             echo json_encode(['status' => 'ok']);
         }
     }
-
 }
