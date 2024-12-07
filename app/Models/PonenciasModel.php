@@ -65,4 +65,18 @@ class PonenciasModel extends Model
         return true;
     }
 
+    function obtenerConteosPonencias()
+    {
+        $sql = "SELECT
+         COALESCE(COUNT(po_id_ponencia), 0) AS total,
+        COALESCE(SUM(po_estatus = 'P'), 0) AS ponencias_pendientes,
+        COALESCE(ROUND(SUM(po_estatus = 'P') * 100.0 / NULLIF(COUNT(po_id_ponencia), 0), 2), 0) AS porcentaje_pendientes,
+        COALESCE(SUM(po_estatus = 'A'), 0) AS ponencias_aceptadas,
+        COALESCE(ROUND(SUM(po_estatus = 'A') * 100.0 / NULLIF(COUNT(po_id_ponencia), 0), 2), 0) AS porcentaje_aceptadas,
+        COALESCE(SUM(po_estatus = 'R'), 0) AS ponencias_rechazadas,
+        COALESCE(ROUND(SUM(po_estatus = 'R') * 100.0 / NULLIF(COUNT(po_id_ponencia), 0), 2), 0) AS porcentaje_rechazadas
+        FROM
+        ponencias;";
+        return $this->db->query($sql)->getRowArray();
+    }
 }

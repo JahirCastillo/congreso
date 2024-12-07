@@ -1,20 +1,21 @@
 <?php
 
 namespace App\Controllers;
-use App\Models\AccesoModel;
+use App\Models\PonenciasModel;
 
 class Inicio extends BaseController
 {
-    protected $accesoModel;
+    protected $ponenciasModel;
     public function __construct()
     {
-        $this->accesoModel = model(AccesoModel::class);
+        $this->ponenciasModel = model(PonenciasModel::class);
     }
     public function index()
     {
         if (!session()->has('nombre')) {
             return redirect()->to('');
         }
-        return view('inicio');
+        $datosVistaInicio['conteosPonencias'] = $this->ponenciasModel->obtenerConteosPonencias();
+        return view('inicio', $datosVistaInicio);
     }
 }
