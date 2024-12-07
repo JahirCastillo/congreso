@@ -66,7 +66,11 @@ class Login extends BaseController
         if ($datos->usu_id) {
             $this->registraSesionUsuario($datos, $session);
             $session->set('nombre', $datos->usu_nombre);
-            return redirect()->to('inicio');
+            if ($datos->usu_rol == 1) {
+                return redirect()->to('inicio');
+            } else {
+                return redirect()->to('revisor');
+            }
         }
     }
     private function registraSesionUsuario($datos, $session)
@@ -76,6 +80,7 @@ class Login extends BaseController
         $session->set('login', $datos->usu_login);
         $session->set('foto', $datos->usu_imagen);
         $session->set('rol', $datos->usu_rol);
+        $session->set('tematica', $datos->usu_tematica);
     }
 
     public function destruirSesion()
