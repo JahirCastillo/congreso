@@ -15,6 +15,7 @@ class Ponencias extends BaseController
             redirect()->to('registro')->send();
             exit;
         }
+
         $this->ponenciasModel     = model(PonenciasModel::class);
         $this->convocatoriasModel = model(ConvocatoriasModel::class);
     }
@@ -52,7 +53,8 @@ class Ponencias extends BaseController
         if (!$validation) {
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
-        $idPonente      = session()->get('idPonente');
+
+        $idPonente      = session('idPonente');
         $idPonencia     = esc($this->request->getPost('po_id_ponencia'));
         $idConvocatoria = $this->convocatoriasModel->getConvocatoriasDisponibles()[0]['id'];
         $dataPonencia   = [

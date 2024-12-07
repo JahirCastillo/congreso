@@ -15,6 +15,13 @@ class Usuarios extends BaseController
         if (!session()->has('usuarioLogueado')) {
             return redirect()->to('');
         }
+        if (session('rol') == 2) {
+            redirect()->to('revisor')->send();
+            exit;
+        } elseif (session('rol') != 1) {
+            redirect()->to('')->send();
+            exit;
+        }
         return view('usuarios/usuariosInicio');
     }
 
