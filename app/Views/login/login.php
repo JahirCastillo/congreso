@@ -38,10 +38,10 @@
         <div class="col-md-6 form-side">
             <div class="login-form">
                 <div class="text-center">
-                    
+
                 </div>
                 <div class="mt-5">
-                    <h3 class="text-center mb-4">Inicio de sesión</h3>
+                    <h2 class="text-center mb-4">Gestión del congreso</h2>
                 </div>
                 <div class="text-center mt-3 mb-5">
                 </div>

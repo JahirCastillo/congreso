@@ -3,7 +3,7 @@
 
 <style>
     .image-side {
-        background: url('/images/login.jpeg') no-repeat center center;
+        background: url('/images/loginInvestigadores.jpg') no-repeat center center;
         background-size: cover;
     }
 
@@ -41,7 +41,7 @@
 
                 </div>
                 <div class="mt-5">
-                    <h3 class="text-center mb-4">Inicio de sesión</h3>
+                    <h3 class="text-center mb-4">Inicio de sesión para ponentes</h3>
                 </div>
                 <div class="text-center mt-3 mb-5">
                 </div>
