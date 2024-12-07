@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="<?= base_url('css/Adminlte/adminlte.min.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('./css/bootstrap-icons.min.css'); ?>">
     <script src="<?= base_url('/js/jquery-3.7.1.min.js'); ?>"></script>
+    <script src="<?= base_url('js/sweetalert2@11.js') ?>"></script>
     <script src="<?= base_url('/js/utilerias.js'); ?>"></script>
     <style>
         body,

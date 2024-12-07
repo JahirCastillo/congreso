@@ -74,19 +74,19 @@
                             <i data-lte-icon="maximize" class="bi bi-arrows-fullscreen"></i>
                             <i data-lte-icon="minimize" class="bi bi-fullscreen-exit" style="display: none;"></i>
                         </a>
-                    </li> <!--end::Fullscreen Toggle--> <!--begin::User Menu Dropdown-->
+                    </li>
                     <li class="nav-item dropdown user-menu"> <a href="#" class="nav-link dropdown-toggle nombreUsuario"
                             data-bs-toggle="dropdown"> <img src="<?= base_url('images/perfil.png'); ?>"
                                 class="user-image rounded-circle shadow" alt="User Image"> <span
                                 class="d-none d-md-inline"><?php echo session('nombre'); ?></span> </a>
-                        <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end"> <!--begin::User Image-->
+                        <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                             <li class="user-header text-bg-primary">
                                 <p>
                                     <?= session('nombre'); ?>
                                     <small></small>
                                 </p>
-                            </li> <!--end::User Image--> <!--begin::Menu Body-->
-                            <li class="user-body"> <!--begin::Row-->
+                            </li>
+                            <li class="user-body">
                                 <div class="row">
                                     <div class="col-3 text-center"></div>
                                     <div class="col-3 text-center"></div>
@@ -141,18 +141,17 @@
                                 </a>
                             </li>
                         <?php endif; ?>
-
-                    </ul> <!--end::Sidebar Menu-->
+                    </ul>
                 </nav>
-            </div> <!--end::Sidebar Wrapper-->
-        </aside> <!--end::Sidebar--> <!--begin::App Main-->
-        <main class="app-main"> <!--begin::App Content Header-->
-            <div class="app-content-header"> <!--begin::Container-->
-                <div class="container-fluid"> <!--begin::Row-->
+            </div>
+        </aside>
+        <main class="app-main">
+            <div class="app-content-header">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-12">
                         </div>
-                    </div> <!--end::Row-->
+                    </div>
                 </div>
             </div>
             <div class="app-content">
@@ -161,16 +160,13 @@
                 </div>
             </div>
         </main>
-        <footer class="app-footer"> <!--begin::To the end-->
-            <div class="float-end d-none d-sm-inline">Anything you want</div> <!--end::To the end-->
-            <!--begin::Copyright--> <strong>
-                Copyright &copy; 2014-2024&nbsp;
-                <a href="https://adminlte.io" class="text-decoration-none">AdminLTE.io</a>.
+        <footer class="app-footer">
+            <div class="float-end d-none d-sm-inline"></div> <strong>
+                Copyright &copy; 2024&nbsp;
+                <a href="https://adminlte.io" class="text-decoration-none"></a>.
             </strong>
-            All rights reserved.
-            <!--end::Copyright-->
-        </footer> <!--end::Footer-->
-    </div> <!--end::App Wrapper--> <!--begin::Script--> <!--begin::Third Party Plugin(OverlayScrollbars)-->
-</body><!--end::Body-->
+        </footer>
+    </div>
+</body>
 
 </html>
