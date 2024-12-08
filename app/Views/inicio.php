@@ -1,49 +1,6 @@
 <?= $this->extend('template'); ?>
 <?= $this->section('content'); ?>
 <div class="row">
-    <div class="col-12 col-sm-6 col-md-4">
-        <div class="info-box">
-            <span class="info-box-icon text-bg-primary shadow-sm">
-                <i class="bi bi-hourglass-split"></i>
-            </span>
-            <div class="info-box-content"> <span class="info-box-text">Ponencias Pendientes</span>
-                <span class="info-box-number">
-                    <?= $conteosPonencias['ponencias_pendientes']; ?>
-                    <small></small>
-                </span>
-            </div>
-        </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-4">
-        <div class="info-box">
-            <span class="info-box-icon text-bg-success shadow-sm">
-                <i class="bi bi-check-circle-fill"></i>
-            </span>
-            <div class="info-box-content">
-                <span class="info-box-text">Ponencias Aceptadas</span>
-                <span class="info-box-number">
-                    <?= $conteosPonencias['ponencias_aceptadas']; ?>
-                    <small></small>
-                </span>
-            </div>
-        </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-4">
-        <div class="info-box">
-            <span class="info-box-icon text-bg-danger shadow-sm">
-                <i class="bi bi-x-circle-fill"></i>
-            </span>
-            <div class="info-box-content">
-                <span class="info-box-text">Ponencias Rechazadas</span>
-                <span class="info-box-number">
-                    <?= $conteosPonencias['ponencias_rechazadas']; ?>
-                    <small></small>
-                </span>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row">
     <div class="col-md-12">
         <div class="card mb-4">
             <div class="card-header d-flex justify-content-between align-items-center">
@@ -74,7 +31,7 @@
                     <div class="col-md-4 col-6">
                         <div class="text-center border-end">
                             <h5 class="fw-bold mb-0"> <?php echo $conteosPonencias['ponencias_pendientes']; ?></h5>
-                            <span class="text-uppercase">Ponencia(s) pendiente(s)</span>
+                            <span class="text">Ponencia(s) pendiente(s)</span>
                             <div class="mt-3">
                                 <span class="text-info mt-3">
                                     <i class="bi bi-hourglass-split"></i>
@@ -86,7 +43,7 @@
                     <div class="col-md-4 col-6">
                         <div class="text-center border-end">
                             <h5 class="fw-bold mb-0"> <?php echo $conteosPonencias['ponencias_aceptadas']; ?></h5>
-                            <span class="text-uppercase">Ponencia(s) aceptada(s)</span>
+                            <span class="text">Ponencia(s) aceptada(s)</span>
                             <div class="mt-3">
                                 <span class="text-success">
                                     <i class="bi bi-check-circle-fill"></i>
@@ -98,7 +55,7 @@
                     <div class="col-md-4 col-6">
                         <div class="text-center">
                             <h5 class="fw-bold mb-0"><?php echo $conteosPonencias['ponencias_rechazadas']; ?></h5>
-                            <span class="text-uppercase">Ponencia(s) rechazada(s)</span>
+                            <span class="text">Ponencia(s) rechazada(s)</span>
                             <div class="mt-3">
                                 <span class="text-danger">
                                     <i class="bi bi-x-circle-fill"></i>
