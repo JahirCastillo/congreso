@@ -72,13 +72,6 @@
                                     <i class="bi bi-check-lg ms-auto d-none"></i>
                                 </button>
                             </li>
-                            <li> <button type="button" class="dropdown-item d-flex align-items-center"
-                                    data-bs-theme-value="auto" aria-pressed="false"> <i
-                                        class="bi bi-circle-fill-half-stroke me-2"></i>
-                                    Auto
-                                    <i class="bi bi-check-lg ms-auto d-none"></i>
-                                </button>
-                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -91,11 +84,11 @@
                             data-bs-toggle="dropdown">
                             <img src="<?= base_url('images/perfil.png'); ?>" class="user-image rounded-circle shadow"
                                 alt="User Image"> <span
-                                class="d-none d-md-inline"><?php echo session('nombre'); ?></span> </a>
+                                class="d-none d-md-inline"><?php echo session('nombrePonente'); ?></span> </a>
                         <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                             <li class="user-header text-bg-primary">
                                 <p>
-                                    <?= session('nombre'); ?>
+                                    <?= session('nombrePonente'); ?>
                                     <small></small>
                                 </p>
                             </li>
