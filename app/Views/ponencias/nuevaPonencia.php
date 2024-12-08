@@ -140,8 +140,8 @@
                             </div>
                             <div class="card-body">
                                 <p class="text-danger">
-                                    El revisor ha rechazado el documento por el siguiente motivo: <br> 
-                                    <?php echo $ponencia['po_motivorechazo']; ?> <br>    
+                                    El revisor ha rechazado el documento por el siguiente motivo: <br>
+                                    <?php echo $ponencia['po_motivorechazo']; ?> <br>
                                     Por favor, súbalo nuevamente.
                                 </p>
                                 <form action="<?= site_url('ponencias/actualizarArchivo') ?>" method="post"
@@ -158,13 +158,17 @@
                                         <small class="text-muted">Solo se permiten archivos PDF o LaTeX
                                             (.tex).</small>
                                     </div>
-                                    <div class="text-center">
-                                        <button type="submit" class="btn btn-primary habilitar">
-                                            <i class="fas fa-upload"></i> Subir Archivo
-                                        </button>
-                                        <a href="<?= site_url('ponencias') ?>" class="btn btn-secondary">
-                                            <i class="fas fa-times"></i> Regresar
-                                        </a>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <button type="submit" class="btn btn-primary habilitar w-100">
+                                                <i class="fas fa-upload"></i> Subir Archivo
+                                            </button>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="<?= site_url('ponencias') ?>" class="btn btn-secondary w-100">
+                                                <i class="fas fa-times"></i> Regresar
+                                            </a>
+                                        </div>
                                     </div>
                                 </form>
                             </div>
@@ -181,11 +185,21 @@
                             Enhorabuena, su ponencia ha sido aceptada. Por favor, asegúrese de presentarla el [fecha] a las
                             [hora].
                         </div>
-                        <div class="text-center mt-3"></div>
-                        <button type="button" class="btn btn-info"
-                            onclick="imprimirConstancia('<?= $nombrePonente; ?>','<?= $ponencia['po_titulo'] ?>')">
-                            <i class="fas fa-print"></i> Imprimir constancia
-                        </button>
+                        <div class="row">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-info me-2 w-100"
+                                    onclick="imprimirConstancia('<?= $nombrePonente; ?>','<?= $ponencia['po_titulo'] ?>')">
+                                    <i class="fas fa-print"></i> Imprimir constancia
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <a href="<?= site_url('ponencias') ?>" class="btn btn-secondary w-100">
+                                    <i class="fas fa-times"></i> Regresar
+                                </a>
+                            </div>
+                        </div>
+
+
                         <script>
                             $(document).ready(function () {
                                 $('.table tbody tr').each(function () {
