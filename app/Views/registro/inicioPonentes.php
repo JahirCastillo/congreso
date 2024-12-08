@@ -13,16 +13,16 @@
                 <div class="card">
                     <?php if (empty($ponencias)): ?>
                         <div class="alert alert-info text-center" role="alert">
-                            No tiene ponencias registradas, para registrar una ponencia dar clic en el botón siguiente:
+                            No tiene ponencias registradas, para registrar una ponencia de clic en el botón siguiente:
                             <a href="<?= site_url('ponencias/nuevaPonencia/0') ?>" class="btn btn-success ms-auto">
-                                <i class="fas fa-plus"></i> Agregar Nueva Ponencia
+                                <i class="bi bi-plus-lg"></i> Agregar nueva ponencia
                             </a>
                         </div>
 
                     <?php else: ?>
                         <div class="card-header d-flex align-items-center">
                             <a href="<?= site_url('ponencias/nuevaPonencia') ?>" class="btn btn-success ms-auto">
-                                <i class="fas fa-plus"></i> Agregar Nueva Ponencia
+                                <i class="fas fa-plus"></i> Agregar nueva ponencia
                             </a>
                         </div>
                         <div class="card-body">

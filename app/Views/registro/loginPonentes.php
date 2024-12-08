@@ -68,8 +68,8 @@
                         <label class="form-check-label" for="rememberMe">Recordarme</label>
                     </div>
                     <button type="button" id="btnIniciarSesion" class="btn btn-info w-100">Iniciar sesión</button>
-                    <button type="button" class="btn btn-link w-100">¿Olvidó su contraseña?</button>
-                    <button type="button" class="btn btn-link w-100" id="btnRegistrarse">¿No tiene cuenta?
+                    <button type="button" class="btn btn-link w-100" id="btnOlvidaContrasena">¿Olvidó su contraseña?</button>
+                    <button type="button" class="btn w-100 btn btn-secondary" id="btnRegistrarse">¿No tiene cuenta?
                         Registrese</button>
                 </form>
             </div>
@@ -92,6 +92,14 @@
             $(this).toggleClass('bi-eye bi-eye-slash');
         });
 
+        $('#btnOlvidaContrasena').click(function () {
+           Swal.fire({
+               title: '¿Olvidó su contraseña?',
+               text: 'Disponible próximamente',
+               icon: 'info',
+               confirmButtonText: 'Aceptar'
+           });
+        });
 
         $("#btnIniciarSesion").click(function (e) {
             e.preventDefault();
