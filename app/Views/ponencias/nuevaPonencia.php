@@ -139,8 +139,11 @@
                                         text-primary">Volver a subir documentos</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-danger">El revisor ha rechazado el documento. Por favor, súbalo
-                                    nuevamente.</p>
+                                <p class="text-danger">
+                                    El revisor ha rechazado el documento por el siguiente motivo: <br> 
+                                    <?php echo $ponencia['po_motivorechazo']; ?> <br>    
+                                    Por favor, súbalo nuevamente.
+                                </p>
                                 <form action="<?= site_url('ponencias/actualizarArchivo') ?>" method="post"
                                     enctype="multipart/form-data">
                                     <?= csrf_field(); ?>
@@ -175,7 +178,8 @@
                         </a>
                     <?php elseif ($ponencia['po_estatus'] == 'A'): ?>
                         <div class="alert alert-success" role="alert">
-                            La ponencia ha sido aceptada. ¡Felicidades! Se tiene que presentar el [fecha] a las [hora].
+                            Enhorabuena, su ponencia ha sido aceptada. Por favor, asegúrese de presentarla el [fecha] a las
+                            [hora].
                         </div>
                         <div class="text-center mt-3"></div>
                         <button type="button" class="btn btn-info"
@@ -236,7 +240,7 @@
             $('.removerAutor,.contenedorBotones').remove();
             $('#btnGuardarPonencia').remove();
             $('#contenedorSubirArchivo').remove();
-            $('#tituloVentana').text('Ver Ponencia');
+            $('#tituloVentana').text('Detalles de la ponencia');
             $('.habilitar').prop('disabled', false);
         }
     });

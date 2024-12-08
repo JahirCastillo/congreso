@@ -7,7 +7,7 @@ class PonenciasModel extends Model
     {
         $idPonente = session()->get('idPonente');
         $builder   = $this->db->table('ponencias');
-        $builder->select('po_id_ponencia,po_titulo,po_hora_inicio,po_estatus,nombre as tematica');
+        $builder->select('po_id_ponencia,po_titulo,po_hora_inicio,po_estatus,nombre as tematica,po_motivorechazo');
         $builder->join('tematicas', 'ponencias.po_id_tematica = tematicas.id_tematica', 'left');
         $builder->where('po_id_ponente', $idPonente);
         $ponencias = $builder->get()->getResultArray();
