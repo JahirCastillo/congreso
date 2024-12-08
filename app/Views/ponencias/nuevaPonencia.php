@@ -1,5 +1,6 @@
 <?= $this->extend('templatePonentes'); ?>
 <?= $this->section('content'); ?>
+<?php helper('date'); ?>
 <?php $nombrePonente = session('nombrePonente'); ?>
 <div class="content-wrapper">
     <div class="content-header">
@@ -182,8 +183,14 @@
                         </a>
                     <?php elseif ($ponencia['po_estatus'] == 'A'): ?>
                         <div class="alert alert-success" role="alert">
-                            Enhorabuena, su ponencia ha sido aceptada. Por favor, asegúrese de presentarla el [fecha] a las
-                            [hora].
+                            <?php
+                            $fecha = fechaEspaniol($ponencia['po_hora_inicio']);
+                            $hora  = date('H:i', strtotime($ponencia['po_hora_inicio']));
+                            ?>
+                            Enhorabuena, su ponencia ha sido aceptada.
+                            <?php if (!empty($ponencia['po_hora_inicio'])): ?>
+                                Por favor, asegúrese de presentarla el <?= ucfirst($fecha); ?> a las <?= $hora; ?> hrs.
+                            <?php endif; ?>
                         </div>
                         <div class="row">
                             <div class="col-6">
