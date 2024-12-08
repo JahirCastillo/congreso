@@ -4,7 +4,7 @@
 <div class="content-wrapper">
     <div class="content-header">
         <div class="container">
-            <h2 class="text-center text-primary mt-3" id="tituloVentana">Registrar Nueva Ponencia</h2>
+            <h2 class="text-center text-primary mt-3" id="tituloVentana">Registrar nueva ponencia</h2>
         </div>
     </div>
 
