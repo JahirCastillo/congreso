@@ -35,15 +35,24 @@
 </head>
 
 
-<body class="layout-fixed sidebar-expand-lg bg-body-tertiary"> <!--begin::App Wrapper-->
-    <div class="app-wrapper"> <!--begin::Header-->
-        <nav class="app-header navbar navbar-expand bg-body"> <!--begin::Container-->
-            <div class="container-fluid"> <!--begin::Start Navbar Links-->
+<body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+    <div class="app-wrapper">
+        <nav class="app-header navbar navbar-expand bg-body">
+            <div class="container-fluid">
                 <ul class="navbar-nav">
-                    <li class="nav-item"> <a class="nav-link" data-lte-toggle="sidebar" href="#" role="button"> <i
-                                class="bi bi-list"></i> </a> </li>
-                </ul> <!--end::Start Navbar Links--> <!--begin::End Navbar Links-->
-                <ul class="navbar-nav ms-auto"> <!--begin::Navbar Search-->
+                    <li class="nav-item">
+                        <a class="nav-link" data-lte-toggle="sidebar" href="#" role="button">
+                            <i class="bi bi-list"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                            aria-controls="offcanvasExample">
+                            <?= esc($config->nombreSistema) ?>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown"> <button
                             class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
                             id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown"
@@ -60,12 +69,16 @@
                                     data-bs-theme-value="dark" aria-pressed="false"> <i
                                         class="bi bi-moon-fill me-2"></i>
                                     Oscuro
-                                    <i class="bi bi-check-lg ms-auto d-none"></i> </button> </li>
+                                    <i class="bi bi-check-lg ms-auto d-none"></i>
+                                </button>
+                            </li>
                             <li> <button type="button" class="dropdown-item d-flex align-items-center"
                                     data-bs-theme-value="auto" aria-pressed="false"> <i
                                         class="bi bi-circle-fill-half-stroke me-2"></i>
                                     Auto
-                                    <i class="bi bi-check-lg ms-auto d-none"></i> </button> </li>
+                                    <i class="bi bi-check-lg ms-auto d-none"></i>
+                                </button>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -73,19 +86,20 @@
                             <i data-lte-icon="maximize" class="bi bi-arrows-fullscreen"></i>
                             <i data-lte-icon="minimize" class="bi bi-fullscreen-exit" style="display: none;"></i>
                         </a>
-                    </li> <!--end::Fullscreen Toggle--> <!--begin::User Menu Dropdown-->
+                    </li>
                     <li class="nav-item dropdown user-menu"> <a href="#" class="nav-link dropdown-toggle nombreUsuario"
-                            data-bs-toggle="dropdown"> <img src="<?= base_url('images/perfil.png'); ?>"
-                                class="user-image rounded-circle shadow" alt="User Image"> <span
+                            data-bs-toggle="dropdown">
+                            <img src="<?= base_url('images/perfil.png'); ?>" class="user-image rounded-circle shadow"
+                                alt="User Image"> <span
                                 class="d-none d-md-inline"><?php echo session('nombre'); ?></span> </a>
-                        <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end"> <!--begin::User Image-->
+                        <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                             <li class="user-header text-bg-primary">
                                 <p>
                                     <?= session('nombre'); ?>
                                     <small></small>
                                 </p>
-                            </li> <!--end::User Image--> <!--begin::Menu Body-->
-                            <li class="user-body"> <!--begin::Row-->
+                            </li>
+                            <li class="user-body">
                                 <div class="row">
                                     <div class="col-3 text-center"></div>
                                     <div class="col-3 text-center"></div>
@@ -93,18 +107,18 @@
                                         <a href="<?= base_url('index.php/registro/destruirSesion'); ?>">Cerrar
                                             sesión</a>
                                     </div>
-                                </div> <!--end::Row-->
-                            </li> <!--end::Menu Body--> <!--begin::Menu Footer-->
+                                </div>
+                            </li>
                         </ul>
-                    </li> <!--end::User Menu Dropdown-->
-                </ul> <!--end::End Navbar Links-->
-            </div> <!--end::Container-->
-        </nav> <!--end::Header--> <!--begin::Sidebar-->
-        <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark"> <!--begin::Sidebar Brand-->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
             <div class="sidebar-brand">
                 <a class="brand-link">
                     <span class="brand-text fw-light"
-                        title="Sistema de consulta de perfil de ingreso"><strong><?= esc($config->nombreSistema) ?></strong></span>
+                        title="Sistema de consulta de perfil de ingreso"><strong><?= esc($config->nombreCorto) ?></strong></span>
                 </a>
                 <!--end::Brand Link-->
             </div> <!--end::Sidebar Brand--> <!--begin::Sidebar Wrapper-->
@@ -117,17 +131,17 @@
                                 <i class="bi bi-megaphone me-1"></i> <span> Ponencias</span>
                             </a>
                         </li>
-                    </ul> <!--end::Sidebar Menu-->
+                    </ul>
                 </nav>
-            </div> <!--end::Sidebar Wrapper-->
-        </aside> <!--end::Sidebar--> <!--begin::App Main-->
-        <main class="app-main"> <!--begin::App Content Header-->
-            <div class="app-content-header"> <!--begin::Container-->
-                <div class="container-fluid"> <!--begin::Row-->
+            </div>
+        </aside>
+        <main class="app-main">
+            <div class="app-content-header">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-12">
                         </div>
-                    </div> <!--end::Row-->
+                    </div>
                 </div>
             </div>
             <div class="app-content">
@@ -136,16 +150,15 @@
                 </div>
             </div>
         </main>
-        <footer class="app-footer"> <!--begin::To the end-->
-            <div class="float-end d-none d-sm-inline">Anything you want</div> <!--end::To the end-->
+        <footer class="app-footer">
+            <div class="float-end d-none d-sm-inline"></div>
             <!--begin::Copyright--> <strong>
-                Copyright &copy; 2014-2024&nbsp;
-                <a href="https://adminlte.io" class="text-decoration-none">AdminLTE.io</a>.
+                Copyright &copy; 2024&nbsp;
+                <a href="https://adminlte.io" class="text-decoration-none"></a>.
             </strong>
             All rights reserved.
-            <!--end::Copyright-->
-        </footer> <!--end::Footer-->
-    </div> <!--end::App Wrapper--> <!--begin::Script--> <!--begin::Third Party Plugin(OverlayScrollbars)-->
-</body><!--end::Body-->
+        </footer>
+    </div>
+</body>
 
 </html>

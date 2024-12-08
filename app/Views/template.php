@@ -36,37 +36,52 @@
 </head>
 
 
-<body class="layout-fixed sidebar-expand-lg bg-body-tertiary"> <!--begin::App Wrapper-->
-    <div class="app-wrapper"> <!--begin::Header-->
-        <nav class="app-header navbar navbar-expand bg-body"> <!--begin::Container-->
-            <div class="container-fluid"> <!--begin::Start Navbar Links-->
+<body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+    <div class="app-wrapper">
+        <nav class="app-header navbar navbar-expand bg-body">
+            <div class="container-fluid">
                 <ul class="navbar-nav">
-                    <li class="nav-item"> <a class="nav-link" data-lte-toggle="sidebar" href="#" role="button"> <i
-                                class="bi bi-list"></i> </a> </li>
-                </ul> <!--end::Start Navbar Links--> <!--begin::End Navbar Links-->
-                <ul class="navbar-nav ms-auto"> <!--begin::Navbar Search-->
-                    <li class="nav-item dropdown"> <button
+                    <li class="nav-item">
+                        <a class="nav-link" data-lte-toggle="sidebar" href="#" role="button">
+                            <i class="bi bi-list"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                            aria-controls="offcanvasExample">
+                            <?= esc($config->nombreSistema) ?>
+                        </a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <button
                             class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
                             id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown"
-                            data-bs-display="static" aria-label="Toggle theme (light)"> <span class="theme-icon-active">
-                                <i class="bi bi-sun-fill me-2"></i> </span> <span class="d-lg-none ms-2"
-                                id="bd-theme-text">Toggle theme</span> </button>
+                            data-bs-display="static" aria-label="Toggle theme (light)">
+                            <span class="theme-icon-active">
+                                <i class="bi bi-sun-fill me-2"></i>
+                            </span> <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+                        </button>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text"
                             style="--bs-dropdown-min-width: 8rem;">
-                            <li> <button type="button" class="dropdown-item d-flex align-items-center active"
-                                    data-bs-theme-value="light" aria-pressed="true"> <i class="bi bi-sun-fill me-2"></i>
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center active"
+                                    data-bs-theme-value="light" aria-pressed="true">
+                                    <i class="bi bi-sun-fill me-2"></i>
                                     Claro
-                                    <i class="bi bi-check-lg ms-auto d-none"></i> </button> </li>
-                            <li> <button type="button" class="dropdown-item d-flex align-items-center"
-                                    data-bs-theme-value="dark" aria-pressed="false"> <i
-                                        class="bi bi-moon-fill me-2"></i>
+                                    <i class="bi bi-check-lg ms-auto d-none"></i>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center"
+                                    data-bs-theme-value="dark" aria-pressed="false">
+                                    <i class="bi bi-moon-fill me-2"></i>
                                     Oscuro
-                                    <i class="bi bi-check-lg ms-auto d-none"></i> </button> </li>
-                            <li> <button type="button" class="dropdown-item d-flex align-items-center"
-                                    data-bs-theme-value="auto" aria-pressed="false"> <i
-                                        class="bi bi-circle-fill-half-stroke me-2"></i>
-                                    Auto
-                                    <i class="bi bi-check-lg ms-auto d-none"></i> </button> </li>
+                                    <i class="bi bi-check-lg ms-auto d-none"></i>
+                                </button>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -93,23 +108,22 @@
                                     <div class="col-6 text-center">
                                         <a href="<?= base_url('index.php/login/destruirSesion'); ?>">Cerrar sesión</a>
                                     </div>
-                                </div> <!--end::Row-->
-                            </li> <!--end::Menu Body--> <!--begin::Menu Footer-->
+                                </div>
+                            </li>
                         </ul>
-                    </li> <!--end::User Menu Dropdown-->
-                </ul> <!--end::End Navbar Links-->
-            </div> <!--end::Container-->
-        </nav> <!--end::Header--> <!--begin::Sidebar-->
-        <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark"> <!--begin::Sidebar Brand-->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
             <div class="sidebar-brand">
                 <a class="brand-link">
                     <span class="brand-text fw-light"
-                        title="Sistema de consulta de perfil de ingreso"><strong><?= esc($config->nombreSistema) ?></strong></span>
+                        title="Sistema de consulta de perfil de ingreso"><strong><?= esc($config->nombreCorto) ?></strong></span>
                 </a>
-                <!--end::Brand Link-->
-            </div> <!--end::Sidebar Brand--> <!--begin::Sidebar Wrapper-->
+            </div>
             <div class="sidebar-wrapper">
-                <nav class="mt-2"> <!--begin::Sidebar Menu-->
+                <nav class="mt-2">
                     <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu"
                         data-accordion="false">
                         <?php if ($rol != 1): ?>
