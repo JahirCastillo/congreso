@@ -85,7 +85,8 @@ class Login extends BaseController
 
     public function destruirSesion()
     {
+
         session()->destroy();
-        return redirect()->to('/')->with('message', 'Sesión destruida correctamente.');
+        return redirect()->to('login')->with('message', 'Sesión destruida correctamente.');
     }
 }
