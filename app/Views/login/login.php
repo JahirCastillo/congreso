@@ -3,7 +3,7 @@
 
 <style>
     .image-side {
-        background: url('./images/login.jpeg') no-repeat center center;
+        background: url('/images/login.jpeg') no-repeat center center;
         background-size: cover;
     }
 
