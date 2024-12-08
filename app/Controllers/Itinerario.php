@@ -4,17 +4,20 @@ namespace App\Controllers;
 
 class Itinerario extends BaseController
 {
-     public function __construct()
-     {
-         if (!session()->has('nombre')) {
-             redirect()->to('')->send();
-             exit;
-         }
-         if (session('rol') != 1) {
-             redirect()->to('revisores')->send();
-             exit;
-         }
-     }
+    public function __construct()
+    {
+        if (!session()->has('nombre')) {
+            redirect()->to('')->send();
+            exit;
+        }
+        if (session('rol') == 2) {
+            redirect()->to('revisor')->send();
+            exit;
+        } elseif (session('rol') != 1) {
+            redirect()->to('')->send();
+            exit;
+        }
+    }
     function index()
     {
         $model             = new \App\Models\ItinerarioModel();
