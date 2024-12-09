@@ -17,17 +17,12 @@
                         <form action="<?= site_url('ponencias/guardar') ?>" method="post" enctype="multipart/form-data">
                             <?= csrf_field(); ?>
                             <input type="hidden" name="po_id_ponencia" value="<?= $idPonencia; ?>">
-                            <!-- Título -->
-                            <div class="mb-3">
-                                <label for="po_titulo" class="form-label">Título de la Ponencia</label>
-                                <input type="text" name="po_titulo" id="po_titulo" class="form-control"
-                                    value="<?= $ponencia['po_titulo']; ?>" required>
-                            </div>
 
                             <!-- Temática -->
                             <div class="mb-3">
                                 <label for="po_id_tematica" class="form-label">Temática</label>
-                                <select name="po_id_tematica" id="po_id_tematica" class="form-control" required>
+                                <select name="po_id_tematica" id="po_id_tematica"
+                                    title="Seleccione un elemento de la lista" class="form-control" required>
                                     <option value="">Seleccione una temática</option>
                                     <?php foreach ($tematicas as $tematica): ?>
                                         <option value="<?= $tematica['id_tematica']; ?>"><?= $tematica['nombre']; ?>
@@ -39,28 +34,22 @@
                             <!-- Subtemática -->
                             <div class="mb-3">
                                 <label for="po_id_subtematica" class="form-label">Subtemática</label>
-                                <select name="po_id_subtematica" id="po_id_subtematica" class="form-control">
+                                <select name="po_id_subtematica" title="Seleccione un elemento de la lista"
+                                    id="po_id_subtematica" class="form-control">
                                     <option value="">Seleccione una subtemática</option>
                                     <!-- Opciones dinámicas cargadas con JavaScript -->
                                 </select>
                             </div>
-
-                            <!-- Palabras Clave -->
+                            <!-- Título -->
                             <div class="mb-3">
-                                <label for="po_palabrasclave" class="form-label">Palabras Clave</label>
-                                <input type="text" name="po_palabrasclave" id="po_palabrasclave" class="form-control"
-                                    placeholder="Separar por comas" value="<?= $ponencia['po_palabrasclave']; ?>"
-                                    required>
-                            </div>
-                            <div class="mb-5" id="contenedorSubirArchivo">
-                                <label for="archivo" class="form-label">Subir Archivo</label>
-                                <input type="file" name="archivo" id="archivo" class="form-control" accept=".pdf,.tex"
-                                    required>
-                                <small class="text-muted">Solo se permiten archivos PDF o LaTeX (.tex).</small>
+                                <label for="po_titulo" class="form-label">Título de la ponencia</label>
+                                <input type="text" title="Complete este campo" name="po_titulo" id="po_titulo"
+                                    class="form-control" value="<?= $ponencia['po_titulo']; ?>" required>
                             </div>
 
+
                             <div class="mb-3">
-                                <button type="button" class="btn btn-success" id="agregarAutor">Agregar
+                                <button type="button" class="btn btn-success mb-3" id="agregarAutor">Agregar
                                     coautores</button>
 
                                 <script>
@@ -69,8 +58,8 @@
                                         const table = document.querySelector('.table tbody');
                                         const row = document.createElement('tr');
                                         row.innerHTML = `
-                                            <td><input type="text" name="autores[${autorIndex}][aut_nombre]" class="form-control" required></td>
-                                            <td><input type="email" name="autores[${autorIndex}][aut_email]" class="form-control" required></td>
+                                            <td><input type="text" title="Complete este campo"  placeholder="Ingrese el nombre completo" name="autores[${autorIndex}][aut_nombre]" class="form-control" required></td>
+                                            <td><input type="email" title="Complete este campo"  placeholder="Ingrese el correo electrónico" name="autores[${autorIndex}][aut_email]" class="form-control" required></td>
                                             <td><button type="button" class="btn btn-danger removerAutor">Eliminar</button></td>
                                         `;
                                         table.appendChild(row);
@@ -90,7 +79,7 @@
                                             <thead>
                                                 <tr>
                                                     <th>Nombre</th>
-                                                    <th>Correo</th>
+                                                    <th>Correo electrónico</th>
                                                     <th>Acciones</th>
                                                 </tr>
                                             </thead>
@@ -117,15 +106,30 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="mb-3">
                                 <label for="po_resumen" class="form-label">Resumen</label>
-                                <textarea name="po_resumen" id="po_resumen" class="form-control"
-                                    required><?= $ponencia['po_resumen']; ?></textarea>
+                                <textarea name="po_resumen" id="po_resumen" title="Complete este campo"
+                                    class="form-control" required><?= $ponencia['po_resumen']; ?></textarea>
+                                <small id="textoContadorPalabras" class="text-muted">0 palabras</small>
+                            </div>
+                            <!-- Palabras Clave -->
+                            <div class="mb-3">
+                                <label for="po_palabrasclave" class="form-label">Palabras clave</label>
+                                <input type="text" name="po_palabrasclave" id="po_palabrasclave" class="form-control"
+                                    placeholder="Separar por comas" title="Complete este campo"
+                                    value="<?= $ponencia['po_palabrasclave']; ?>" required>
+                            </div>
+                            <div class="mb-5" id="contenedorSubirArchivo">
+                                <label for="archivo" class="form-label">Subir archivo</label>
+                                <input type="file" name="archivo" id="archivo" class="form-control" accept=".pdf,.tex"
+                                    required>
+                                <small class="text-muted">Únicamente se permiten archivos PDF o LaTeX (.tex)</small>
                             </div>
 
                             <div class="text-center contenedorBotones">
                                 <button type="submit" class="btn btn-primary" id="btnGuardarPonencia">
-                                    <i class="fas fa-save"></i> Guardar Ponencia
+                                    <i class="fas fa-save"></i> Guardar ponencia
                                 </button>
                                 <a href="<?= site_url('ponencias') ?>" class="btn btn-secondary">
                                     <i class="fas fa-times"></i> Regresar
@@ -153,16 +157,15 @@
                                     <input type="hidden" name="po_revisiones" value="<?= $ponencia['po_revisiones']; ?>"
                                         class="habilitar">
                                     <div class="mb-3">
-                                        <label for="archivo" class="form-label">Subir Archivo</label>
+                                        <label for="archivo" class="form-label">Subir archivo</label>
                                         <input type="file" name="archivo" id="archivo" class="form-control habilitar"
                                             accept=".pdf,.tex" required>
-                                        <small class="text-muted">Solo se permiten archivos PDF o LaTeX
-                                            (.tex).</small>
+                                        <small class="text-muted">Únicamente se permiten archivos PDF o LaTeX(.tex)</small>
                                     </div>
                                     <div class="row">
                                         <div class="col-6">
                                             <button type="submit" class="btn btn-primary habilitar w-100">
-                                                <i class="fas fa-upload"></i> Subir Archivo
+                                                <i class="fas fa-upload"></i> Subir archivo
                                             </button>
                                         </div>
                                         <div class="col-6">
@@ -222,7 +225,7 @@
                                 const ponencia = encodeURIComponent(titulo);
                                 document.getElementById('constancia').src = `http://148.226.1.32/ponencias/mostrarconstancia?ponente=${ponente}&ponencia=${ponencia}`;
                                 $('#constanciaModal').modal('show');
-                            }
+                            }   
                         </script>
                     <?php endif; ?>
                 </div>
@@ -263,7 +266,24 @@
             $('#contenedorSubirArchivo').remove();
             $('#tituloVentana').text('Detalles de la ponencia');
             $('.habilitar').prop('disabled', false);
+            let cuantasPalabras = contarPalabras();
+            $('#textoContadorPalabras').text(`${cuantasPalabras} palabras`);
         }
+
+        $('#po_resumen').on('input', function () {
+            let texto = $(this).val().trim();
+            let palabras = texto.split(/\s+/);
+            let contadorPalabras = contarPalabras();
+
+            if (contadorPalabras > 250) {
+                // Limita el contenido a las primeras 250 palabras
+                palabras = palabras.slice(0, 250);
+                $(this).val(palabras.join(' '));
+                contadorPalabras = 250;
+            }
+
+            $('#textoContadorPalabras').text(`${contadorPalabras} palabras`);
+        });
     });
     document.getElementById('po_id_tematica').addEventListener('change', function () {
         const tematicaId = this.value;
@@ -287,5 +307,23 @@
                 subtematicaSelect.innerHTML = '<option value="">Seleccione una temática primero</option>';
             });
     });
+
+    function contarPalabras() {
+        let texto = $('#po_resumen').val().trim();
+        let palabras = texto.split(/\s+/);
+        let contadorPalabras = palabras.length;
+
+        if (texto.length === 0) {
+            contadorPalabras = 0;
+        }
+
+        // Limitar a 250 palabras
+        if (contadorPalabras > 250) {
+            palabras = palabras.slice(0, 250);
+            $('#po_resumen').val(palabras.join(' '));
+            contadorPalabras = 250;
+        }
+        return contadorPalabras;
+    }
 </script>
 <?= $this->endSection(); ?>
