@@ -185,7 +185,19 @@
                 info.event.overlap = false;
             },
             eventDrop: function (info) {
+                let fechaInicioMysql = formatDate(info.event.start);
+                let fechaFinMysql = formatDate(info.event.end);
+                let ponenciaId = info.event.id;
 
+                getObject('<?= base_url('itinerario/actualizarHora') ?>', {
+                    ponenciaId,
+                    fechaInicioMysql,
+                    fechaFinMysql
+                }, function (response) {
+
+                });
+            },
+            eventResize: function (info) {
                 let fechaInicioMysql = formatDate(info.event.start);
                 let fechaFinMysql = formatDate(info.event.end);
                 let ponenciaId = info.event.id;
