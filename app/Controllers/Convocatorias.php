@@ -99,7 +99,9 @@ class Convocatorias extends BaseController
                 'fecha_limite_documentos'           => esc($this->request->getPost('fecha_limite_documentos')),
                 'descripcion'                       => $this->request->getPost('descripcionconvoactoria'),
                 'ubicacion'                         => esc($this->request->getPost('ubicacion')),
-                'estatus'                           => esc($this->request->getPost('estatus'))
+                'estatus'                           => esc($this->request->getPost('estatus')),
+                'fecha_inicio_dictaminacion'        => esc($this->request->getPost('fecha_inicio_dictaminacion')),
+                'fecha_fin_dictaminacion'           => esc($this->request->getPost('fecha_fin_dictaminacion'))
             ];
 
             $resultado = $id == 0
