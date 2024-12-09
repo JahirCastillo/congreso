@@ -122,4 +122,13 @@ class Usuarios extends BaseController
             return $this->response->setStatusCode(403, 'Forbidden');
         }
     }
+
+    function eliminarUsuario(){
+        $id = esc($this->request->getPost('id'));
+        $resultado = $this->usuariosModel->eliminaUsuario($id);
+        return $this->response->setJSON([
+            'estatus' => $resultado ? "ok" : "no",
+            'mensaje' => $resultado ? 'Usuario eliminado' : ''
+        ]);
+    }
 }

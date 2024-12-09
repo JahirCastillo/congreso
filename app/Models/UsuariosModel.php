@@ -68,4 +68,15 @@ class UsuariosModel extends Model
         return $tematicas;
     }
 
+    function eliminaUsuario($id)
+    {
+        $respuesta = false;
+        $builder   = $this->db->table('usuarios');
+        $builder->where('usu_id', $id);
+        $builder->delete();
+        if ($this->db->affectedRows() > 0) {
+            $respuesta = true;
+        }
+        return $respuesta;
+    }
 }

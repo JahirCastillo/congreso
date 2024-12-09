@@ -151,5 +151,33 @@
             $('#modalDetallesUsuario').modal('show');
         });
     }
+
+    function eliminarUsuario(id) {
+        Swal.fire({
+            title: '¿Estás seguro de eliminar este usuario?',
+            text: "Esta acción no se puede deshacer",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Sí, eliminar',
+            cancelButtonText: 'Cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                getObject('usuarios/eliminarUsuario', { id: id }, function (response) {
+                    if (response.estatus === 'ok') {
+                        $('#tablaUsuarios').DataTable().ajax.reload();
+                    } else {
+                        Swal.fire({
+                            title: 'Error',
+                            text: response.mensaje,
+                            icon: 'error',
+                            confirmButtonText: 'Aceptar'
+                        });
+                    }
+                });
+            }
+        });
+    }
 </script>
 <?= $this->endSection(); ?>
