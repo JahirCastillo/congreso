@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\xampp\htdocs\Nube\congreso\phpunit.xml" tests="6" assertions="5" errors="2" failures="0" skipped="0" time="0.009309">
+    <testsuite name="App" tests="6" assertions="5" errors="2" failures="0" skipped="0" time="0.009309">
+      <testsuite name="ExampleDatabaseTest" file="C:\xampp\htdocs\Nube\congreso\tests\database\ExampleDatabaseTest.php" tests="2" assertions="0" errors="2" failures="0" skipped="0" time="0.000000">
+        <testcase name="testModelFindAll" file="C:\xampp\htdocs\Nube\congreso\tests\database\ExampleDatabaseTest.php" line="17" class="ExampleDatabaseTest" classname="ExampleDatabaseTest" assertions="0" time="0.000000">
+          <error type="CodeIgniter\Exceptions\CriticalError">ExampleDatabaseTest::testModelFindAll&#13;
+CodeIgniter\Exceptions\CriticalError: The required PHP extension "sqlite3" is not loaded. Install and enable it to use "SQLite3" driver.
+&#13;
+C:\xampp\htdocs\Nube\congreso\system\Database\Database.php:182
+C:\xampp\htdocs\Nube\congreso\system\Database\Database.php:59
+C:\xampp\htdocs\Nube\congreso\system\Database\Config.php:84
+C:\xampp\htdocs\Nube\congreso\system\Test\DatabaseTestTrait.php:82
+C:\xampp\htdocs\Nube\congreso\system\Test\DatabaseTestTrait.php:59
+C:\xampp\htdocs\Nube\congreso\system\Test\CIUnitTestCase.php:251</error>
+        </testcase>
+        <testcase name="testSoftDeleteLeavesRow" file="C:\xampp\htdocs\Nube\congreso\tests\database\ExampleDatabaseTest.php" line="28" class="ExampleDatabaseTest" classname="ExampleDatabaseTest" assertions="0" time="0.000000">
+          <error type="CodeIgniter\Exceptions\CriticalError">ExampleDatabaseTest::testSoftDeleteLeavesRow&#13;
+CodeIgniter\Exceptions\CriticalError: The required PHP extension "sqlite3" is not loaded. Install and enable it to use "SQLite3" driver.
+&#13;
+C:\xampp\htdocs\Nube\congreso\system\Database\Database.php:182
+C:\xampp\htdocs\Nube\congreso\system\Database\Database.php:59
+C:\xampp\htdocs\Nube\congreso\system\Database\Config.php:84
+C:\xampp\htdocs\Nube\congreso\system\Test\DatabaseTestTrait.php:82
+C:\xampp\htdocs\Nube\congreso\system\Test\DatabaseTestTrait.php:59
+C:\xampp\htdocs\Nube\congreso\system\Test\CIUnitTestCase.php:251</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="ExampleSessionTest" file="C:\xampp\htdocs\Nube\congreso\tests\session\ExampleSessionTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.001621">
+        <testcase name="testSessionSimple" file="C:\xampp\htdocs\Nube\congreso\tests\session\ExampleSessionTest.php" line="11" class="ExampleSessionTest" classname="ExampleSessionTest" assertions="1" time="0.001621"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\ExampleTest" file="C:\xampp\htdocs\Nube\congreso\tests\unit\ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.000837">
+        <testcase name="testExample" file="C:\xampp\htdocs\Nube\congreso\tests\unit\ExampleTest.php" line="9" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" assertions="1" time="0.000837"/>
+      </testsuite>
+      <testsuite name="HealthTest" file="C:\xampp\htdocs\Nube\congreso\tests\unit\HealthTest.php" tests="2" assertions="3" errors="0" failures="0" skipped="0" time="0.006851">
+        <testcase name="testIsDefinedAppPath" file="C:\xampp\htdocs\Nube\congreso\tests\unit\HealthTest.php" line="13" class="HealthTest" classname="HealthTest" assertions="1" time="0.000515"/>
+        <testcase name="testBaseUrlHasBeenSet" file="C:\xampp\htdocs\Nube\congreso\tests\unit\HealthTest.php" line="18" class="HealthTest" classname="HealthTest" assertions="2" time="0.006336"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
