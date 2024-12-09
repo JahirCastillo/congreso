@@ -147,9 +147,8 @@
             <div class="float-end d-none d-sm-inline"></div>
             <!--begin::Copyright--> <strong>
                 Copyright &copy; 2024&nbsp;
-                <a href="https://adminlte.io" class="text-decoration-none"></a>.
+                <a href="https://adminlte.io" class="text-decoration-none"></a>
             </strong>
-            All rights reserved.
         </footer>
     </div>
 </body>

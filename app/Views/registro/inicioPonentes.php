@@ -3,7 +3,7 @@
 <div class="content-wrapper">
     <div class="content-header">
         <div class="container">
-            <h2 class="text-center text-primary mt-3">Lista de Ponencias</h2>
+            <h2 class="text-center text-primary mt-3">Lista de ponencias</h2>
         </div>
     </div>
 
@@ -13,7 +13,7 @@
                 <div class="card">
                     <?php if (empty($ponencias)): ?>
                         <div class="alert alert-info text-center" role="alert">
-                            No tiene ponencias registradas, para registrar una ponencia de clic en el botón siguiente:
+                            No tiene ponencias registradas, para registrar una ponencia haga clic en el botón siguiente:
                             <a href="<?= site_url('ponencias/nuevaPonencia/0') ?>" class="btn btn-success ms-auto">
                                 <i class="bi bi-plus-lg"></i> Agregar nueva ponencia
                             </a>

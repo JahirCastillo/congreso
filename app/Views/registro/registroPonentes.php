@@ -4,7 +4,7 @@
 <div class="content-wrapper">
     <div class="content-header">
         <div class="container">
-            <h1 class="text-center text-primary mt-3">Registro de Ponentes</h1>
+            <h1 class="text-center text-primary mt-3">Registro de ponentes</h1>
         </div>
     </div>
 
@@ -53,7 +53,7 @@
 
                                 <!-- Repite Contraseña -->
                                 <div class="mb-3">
-                                    <label for="repiteContrasena" class="form-label">Repite la Contraseña</label>
+                                    <label for="repiteContrasena" class="form-label">Repita la contraseña</label>
                                     <div class="input-group">
                                         <input type="password" class="form-control" id="repiteContrasena"
                                             name="repiteContrasena" placeholder="Repita la contraseña" required>
@@ -67,9 +67,9 @@
 
                                 <!-- Institución -->
                                 <div class="mb-3">
-                                    <label for="institucion" class="form-label">Institución</label>
+                                    <label for="institucion" class="form-label">Institución educativa</label>
                                     <input type="text" class="form-control" id="institucion" name="institucion"
-                                        placeholder="Ingrese el nombre de su institución" required>
+                                        placeholder="Ingrese el nombre de su institución educativa" required>
                                     <div class="invalid-feedback">Por favor, ingrese su institución.</div>
                                 </div>
 

@@ -18,7 +18,7 @@
             <div class="col-md-6 mb-3">
                 <div class="card">
                     <div class="card-header bg-light">
-                        <strong>Institución</strong>
+                        <strong>Institución educativa</strong>
                     </div>
                     <div class="card-body">
                         <p class="fs-5"><?= esc($institucion) ?></p>
@@ -66,7 +66,7 @@
             <div class="col-md-6 mb-3">
                 <div class="card">
                     <div class="card-header bg-light">
-                        <strong>Fecha de Registro</strong>
+                        <strong>Fecha de registro</strong>
                     </div>
                     <div class="card-body">
                         <p class="fs-5"><?= esc($po_fecha_registro) ?></p>
@@ -77,8 +77,7 @@
     </div>
 </div>
 <div class="card">
-    <div class="card-header bg-success text-white">
-        <strong>Archivo de la Ponencia</strong>
+    <div class="card-header bg-ponencia</strong>
     </div>
     <div class="card-body">
         <p class="text-muted fs-6 mb-2">Haz clic para descargar el archivo asociado a esta ponencia.</p>

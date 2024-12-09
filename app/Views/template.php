@@ -177,7 +177,7 @@
         <footer class="app-footer">
             <div class="float-end d-none d-sm-inline"></div> <strong>
                 Copyright &copy; 2024&nbsp;
-                <a href="https://adminlte.io" class="text-decoration-none"></a>.
+                <a href="https://adminlte.io" class="text-decoration-none"></a>
             </strong>
         </footer>
     </div>
