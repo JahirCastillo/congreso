@@ -28,7 +28,7 @@ class RegistroModel extends Model
         } else {
             $this->db->transCommit();
             session()->set('idPonente', $idPonente);
-            session()->set('nombre', $datosPonente['nombre']);
+            session()->set('nombrePonente', $datosPonente['nombre']);
             session()->set('emailPonente', $datosPonente['email']);
             session()->set('institucion', $datosPonente['institucion']);
             session()->set('pais', $datosPonente['pais']);

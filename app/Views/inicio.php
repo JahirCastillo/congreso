@@ -12,9 +12,6 @@
                         <i data-lte-icon="expand" class="bi bi-plus-lg"></i>
                         <i data-lte-icon="collapse" class="bi bi-dash-lg"></i>
                     </button>
-                    <button type="button" class="btn btn-tool" data-lte-toggle="card-remove">
-                        <i class="bi bi-x-lg"></i>
-                    </button>
                 </div>
             </div>
 
@@ -104,9 +101,9 @@
             },
             xaxis: {
                 categories: [
-                    'Ponencias Pendientes',
-                    'Ponencias Aceptadas',
-                    'Ponencias Rechazadas'
+                    'Ponencias pendientes',
+                    'Ponencias aceptadas',
+                    'Ponencias rechazadas'
                 ],
                 labels: {
                     style: {

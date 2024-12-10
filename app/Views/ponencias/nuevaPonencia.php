@@ -300,6 +300,7 @@
                 });
                 if (subtematica > 0) {
                     $('#po_id_subtematica').val(subtematica);
+                    
                 }
             })
             .catch(error => {

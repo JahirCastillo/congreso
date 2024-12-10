@@ -38,7 +38,8 @@ class PonenciasModel extends Model
     public function agregaPonencia($data)
     {
         $this->db->table('ponencias')->insert($data);
-        return $this->db->insertID();
+        $idPonencia = $this->db->insertID();
+        return $idPonencia;
     }
 
     function getAutores($idPonencia)
