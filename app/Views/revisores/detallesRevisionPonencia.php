@@ -77,11 +77,12 @@
     </div>
 </div>
 <div class="card">
-    <div class="card-header bg-ponencia</strong>
+    <div class="card-header bg-success text-white">
+        <strong>Archivo de la ponencia</strong>
     </div>
     <div class="card-body">
         <p class="text-muted fs-6 mb-2">Haz clic para descargar el archivo asociado a esta ponencia.</p>
-        <a href="<?= site_url('revisor/descargaArchivo/' . $id_ponente . '/' . $archivo) ?>"
+        <a href="<?= site_url('revisor/descargaArchivo/' . $id_ponente . '/' . $po_id_ponencia . '/' . $archivo) ?>"
             class="btn btn-outline-primary btn-lg w-100" download>
             <i class="fas fa-download me-2"></i> Descargar Ponencia
         </a>
