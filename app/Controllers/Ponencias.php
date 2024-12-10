@@ -37,9 +37,13 @@ class Ponencias extends BaseController
     function editar($idPonencia)
     {
         $datos['idPonencia'] = $idPonencia;
-        $datos['tematicas']  = $this->ponenciasModel->getTematicas();
-        $datos['autores']    = $this->ponenciasModel->getAutores($idPonencia);
-        $datos['ponencia']   = $this->ponenciasModel->getPonencia($idPonencia);
+        $ponenciasDePonente  = $this->ponenciasModel->getPonencias();
+        if (!empty($ponenciasDePonente) && !in_array($idPonencia, array_column($ponenciasDePonente, 'po_id_ponencia'))) {
+            return redirect()->to('ponencias')->with('errors', ['No tienes permiso para editar esta ponencia']);
+        }
+        $datos['tematicas'] = $this->ponenciasModel->getTematicas();
+        $datos['autores']   = $this->ponenciasModel->getAutores($idPonencia);
+        $datos['ponencia']  = $this->ponenciasModel->getPonencia($idPonencia);
         return view('ponencias/nuevaPonencia', $datos);
     }
 
@@ -70,16 +74,17 @@ class Ponencias extends BaseController
             $dataPonencia['po_fecha_registro'] = date('Y-m-d H:i:s');
             $dataPonencia['po_estatus']        = 'P';
             $dataPonencia['po_revisiones']     = 1;
-            $rutaCarpeta                       = WRITEPATH . "uploads/ponencias/ponente_$idPonente/";
+
+            $archivo       = $this->request->getFile('archivo');
+            $nombreArchivo = $dataPonencia['po_revisiones'] . '.' . $archivo->getExtension();
+            $ponenciaId    = $this->ponenciasModel->agregaPonencia($dataPonencia);
+            $rutaCarpeta   = WRITEPATH . "uploads/ponencias/ponente_$idPonente/" . $ponenciaId . "/";
+
             if (!is_dir($rutaCarpeta)) {
                 mkdir($rutaCarpeta, 0755, true);
             }
-            $archivo       = $this->request->getFile('archivo');
-            $nombreArchivo = $dataPonencia['po_revisiones'] . '.' . $archivo->getExtension();
             $archivo->move($rutaCarpeta, $nombreArchivo);
-
-            $ponenciaId = $this->ponenciasModel->agregaPonencia($dataPonencia);
-            $autores    = $this->request->getPost('autores');
+            $autores = $this->request->getPost('autores');
             if (!empty($autores)) {
                 $respuestaGuardaAutores = $this->ponenciasModel->insertaAutores($autores, $ponenciaId);
                 if (!$respuestaGuardaAutores) {
@@ -94,7 +99,7 @@ class Ponencias extends BaseController
     {
         $idPonencia  = esc($this->request->getPost('po_id_ponencia'));
         $idPonente   = session()->get('idPonente');
-        $rutaCarpeta = WRITEPATH . "uploads/ponencias/ponente_$idPonente/";
+        $rutaCarpeta = WRITEPATH . "uploads/ponencias/ponente_$idPonente/" . "$idPonencia/";
         if (!is_dir($rutaCarpeta)) {
             mkdir($rutaCarpeta, 0755, true);
         }
