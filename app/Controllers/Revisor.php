@@ -30,9 +30,9 @@ class Revisor extends BaseController
             $idPonencia    = esc($this->request->getPost('id'));
             $datosPonencia = $this->revisorModel->getDetallesPonencia($idPonencia);
             $ponenteId     = $datosPonencia['id_ponente'];
-            $rutaCarpeta   = WRITEPATH . 'uploads/ponencias/ponente_' . $ponenteId;
+            $rutaCarpeta   = WRITEPATH . 'uploads/ponencias/ponente_' . $ponenteId . '/' . $idPonencia . '/';
             if (!is_dir($rutaCarpeta)) {
-                mkdir($rutaCarpeta, 0777, true);
+                mkdir($rutaCarpeta, 0755, true);
             }
             $archivos      = scandir($rutaCarpeta);
             $ultimoArchivo = '';
@@ -69,9 +69,9 @@ class Revisor extends BaseController
             echo json_encode(['estatus' => 'ok']);
         }
     }
-    public function descargaArchivo($idPonente, $nombreArchivo)
+    public function descargaArchivo($idPonente, $idPonencia, $nombreArchivo)
     {
-        $rutaArchivo = 'ponencias/ponente_' . $idPonente . '/' . $nombreArchivo;
+        $rutaArchivo = 'ponencias/ponente_' . $idPonente . '/' . $idPonencia . '/' . $nombreArchivo;
         return $this->response->download(WRITEPATH . 'uploads/' . $rutaArchivo, null);
     }
 
